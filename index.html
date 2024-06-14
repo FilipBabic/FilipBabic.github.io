@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filip Babic | Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" aria-label="toggle navigation">
+                <img src="assets/icons/bars-solid.png" alt="Menu" width="26" height="30">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1>Filip Babic | Web Developer</h1>
+            <br>
+            <h3>Welcome to my portfolio website</h3>
+            <br>
+            <p>Discover more about me, my professional background, hobbies, attitudes and passions here. This site offers simple programs for entertainment, along with numerous definitions and useful tips to help you enhance your understanding of various software development areas. Additionally, you'll find information on how to contact me and explore potential collaboration opportunities.</p>
+                
+                <p>
+                    Below is a story about me if you want to go straight to professional information click on the <a href="services.html"> services</a> or <a href="projects.html">projecs</a> page.
+                </p>
+                
+                So let's get started &#128512;
+            </p>
+            
+            
+        </section>
+        <section>
+            <h3>About me </h3>
+            <br>
+            <p>
+                Hi everyone, I'm Filip, a software developer from <a target=”_blank” href="https://www.google.com/search?q=Belgrade">Belgrade, the capital of Serbia</a>. I was born on March 6, 1986, in Belgrade, making me 38 years old. Growing up in the analog age, before the rise of commercial internet, I was always fascinated by video games and the digital world. I dreamed of understanding how it all worked, but the limited information and development at that time made it difficult.
+            </p>
+            
+            <p>
+                I watched older kids with their 286, 386, and 486 computers and longed for one of my own. In 1998, when I was in fifth grade of Elementary School, I got my first computer, a <a href="https://en.wikipedia.org/wiki/Pentium" target="_blank">Pentium</a>. I was overjoyed and immediately dove into video games and writing word documents. I remember the first ones was "Civilization" and "Championship Manager". My parents regularly gave me tasks to type and format word documents for them. In the same year I started playing basketball and competing in younger categories (I earned my first medal in 2001). That how I found another passion that continues to this day. I experienced the internet for the first time a year later. It was <a href="https://en.wikipedia.org/wiki/Dial-up_Internet_access" target="_blank">Dial-up internet</a>, using a telephone line and audio signals for data transmission. This system was quite inefficient, taking a long time to connect, data packet loss, frequently dropping connections due to phone calls...
+            </p>
+            
+            <p>
+                I went to the <a href="https://www.google.com/search?q=cetvrta%20gimnazija" target="_blank"> 4th Belgrade Gymnasium School</a>. My direction was natural sciences and the most successful subjects were mathematics, logic and sports. This is where I encountered programming for the first time. The first programming languages ​​I met were <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a> and <a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)" target="_blank">Pascal</a>. Here I met a lot of good people and many of them are now my friends. Events and anecdotes continue to be told. At that time, there were popular PC gaming rooms where we often went and played in LAN. We even created our own virtual servers via dial up and played from home. I mostly played Warcraft, Counter Strike, Dota and Pro Evolution Soccer. 
+            </p>
+            
+            <p>
+                After finishing high school, I entered the Faculty of Transport and Traffic Engineering in Belgrade. I passed the entrance exam in Mathematics without any mistakes with the maximum number of points. I would throw the next two years into oblivion. Puberty and dating left me without passing the exam and I decided to leave college. But there is something good in every experience. I decided to enroll in a new college and choose a new profession. 
+            </p>
+            
+            <p>
+                In 2007 I entered <a href="https://eng.singidunum.ac.rs/" target="_blank">Singidunum University,</a> Faculty of Bussines and Informatics (later renamed in <a href="https://fir.singidunum.ac.rs/" target="_blank">Faculty of Informatics and Computing</a>). I have chosen the programming and design direction. I studied various subjects, but the most relevant are Basics of Programming, Java, Web programming, Databases, Economics, Bussines, Management, Math, Statistic... At the same time, I joined the basketball team and represented my university at various sports tournaments in the largest European cities. I brought a lot of medals and made new friends from these competitions. 
+                I graduated in 2012 and earned the <b>"Bachelor's Degree of Business Informatics"</b>.
+            </p>
+            <br>
+        </section>
+        <section>
+            <h3>How to calculate time since birth? just enter date and time of birth &#128512;</h3>
+            <br>
+            <div class="age-calculator">
+                <h1>Time Since Birth Age Calculator with code example</h1>
+                <form id="age-form">
+                    <label for="dob">Enter your date of birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="birth-hour">Hour:</label>
+                    <input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required>
+                    <label for="birth-minute">Minute:</label>
+                    <input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required>
+                    <button type="button" onclick="calculateAge()">Calculate Age</button>
+                </form>
+                <p id="result"></p>                
+                <h2>Code Example</h2>
+                    <details>
+                        <summary>SHOW THE CODE</summary>
+                        <div class="sample-code">
+                            <p style="text-align: center;font-weight: bold;">HTML:</p>
+                            <pre>
+                                <code class="language-html">
+&lt;div class="age-calculator"&gt;
+    &lt;h1&gt;Age Calculator&lt;/h1&gt;
+        &lt;form id="age-form"&gt;
+            &lt;label for="dob"&gt;Enter your date of birh:&lt;/label&gt;
+            &lt;input type="date" id="dob" name="dob" required&gt;
+            &lt;label for="birth-hour">Hour:&lt;/label&gt;
+            &lt;input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required&gt;
+            &lt;label for="birth-minute"&gt;Minute:&lt;/label&gt;
+            &lt;input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required&gt;
+            &lt;button type="button" onclick="calculateAge()"&gt;Calculate Age&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;p id="result"&gt;&lt;/p&gt;
+&lt;/div&gt;</code>
+                            </pre>
+                            <p style="text-align: center;font-weight: bold;">JavaScript:</p>
+                            <pre>
+                                <code class="language-js">
+function calculateAge() {
+    const dob = document.getElementById('dob').value;
+    const birthHour = parseInt(document.getElementById('birth-hour').value);
+    const birthMinute = parseInt(document.getElementById('birth-minute').value);
+    
+    if (dob && !isNaN(birthHour) && !isNaN(birthMinute) && !(birthHour>24) && !(birthMinute>60)) {
+        const dobDate = new Date(dob);
+        dobDate.setHours(birthHour, birthMinute, 0, 0);  // Set hour and minute of birth
+
+    const today = new Date();
+    
+    // Check if the date of birth is in the future
+    if (dobDate > today) {
+        document.getElementById('result').innerText = 'The date of birth cannot be in the future.';
+        return;
+    }
+
+    // Calculate years
+    let ageYears = today.getFullYear() - dobDate.getFullYear();
+    let ageMonths = today.getMonth() - dobDate.getMonth();
+    let ageDays = today.getDate() - dobDate.getDate();
+    let ageHours = today.getHours() - dobDate.getHours();
+    let ageMinutes = today.getMinutes() - dobDate.getMinutes();
+    let ageSeconds = today.getSeconds() - dobDate.getSeconds();
+
+    // Adjust months and years
+    if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+        ageYears--;
+        ageMonths += 12;
+    }
+
+    // Adjust days and months
+    if (ageDays < 0) {
+        ageMonths--;
+        let lastMonth = (today.getMonth() - 1 + 12) % 12;
+        let daysInLastMonth = new Date(today.getFullYear(), lastMonth + 1, 0).getDate();
+        ageDays += daysInLastMonth;
+    }
+
+    // Adjust hours and days
+    if (ageHours < 0) {
+        ageDays--;
+        ageHours += 24;
+    }
+
+    // Adjust minutes and hours
+    if (ageMinutes < 0) {
+        ageHours--;
+        ageMinutes += 60;
+    }
+
+    // Adjust seconds and minutes
+    if (ageSeconds < 0) {
+        ageMinutes--;
+        ageSeconds += 60;
+    }
+
+    document.getElementById('result').innerText = `Your age is: 
+        ${ageYears} years, 
+        ${ageMonths} months, 
+        ${ageDays} days, 
+        ${ageHours} hours, 
+        ${ageMinutes} minutes, 
+        and ${ageSeconds} seconds old.`;
+    } else {
+        document.getElementById('result').innerText = 'Please enter a valid date of birth, hour, and minute.';
+    }
+}</code>
+</pre>
+    <p style="text-align: center;font-weight: bold;">CSS:</p>
+        <pre><code class="language-css">
+.calculate-age {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculate-age h2 {
+    margin-bottom: 20px;
+}
+
+.calculate-age form {
+    margin-bottom: 20px;
+}
+
+.calculate-age input[type="date"],
+.calculate-age input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.calculate-age button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calculate-age button:hover {
+    background-color: #555;
+}
+
+#result {
+    font-size: 18px;
+    color: #333;
+}</code>
+</pre>
+
+                            
+                        </div>
+                    </details>
+                    
+            </div>
+        </section>
+    </main>
+        
+    <footer>
+        <p>&copy; 2024 Filip Babić. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
