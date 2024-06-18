@@ -48,7 +48,7 @@ nav {
     font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
-    color: #00477e;
+    color: #32a3d3;
     background-color: #fff;
     transition: transform 0.3s ease;   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -110,15 +110,20 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
 }
-
+/* shade of blue color #7cacf8  */
 h1 {
     text-align: center;
     color: #00477e;
+    margin: 1rem 0;
 }
-
+h2 {
+    text-align: center;
+    color:#00477e;
+    margin: 1rem 0;
+}
 h3 {
     text-align: center;
-    color: #00477e;
+    color: #32a3d3;
 }
 p {
     padding: 10px 0;
@@ -253,11 +258,11 @@ pre {
 }
 
 .language-html {
-    color: #ee773b;
+    color: #fe8d45;
 }
 
 .language-js {
-    color:#d9c626;
+    color:#dcdc9d;
 }
 
 .language-css {
@@ -297,7 +302,7 @@ pre {
         text-align: center;
         background: #00477e;
     }
-
+    
     .nav-links.active {
         display: flex;
         flex-direction: column;
