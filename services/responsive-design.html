@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - My Portfolio</title>
+    <title>Responsive Design | Filip Babic</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,23 +11,36 @@
     <header>
         <nav>
             <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="assets/icons/bars-solid.png" alt="Menu" width="26" height="30">
+                <a href="../services.html" ><img src="../assets/icons/arrow-left-solid.svg" alt="Menu Icon" width="30" height="30"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../services.html">Services</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
         </nav>
     </header>
 
-    <main>
+    <main>        
         <section id="projects">
-            <h1>responsive-design
-            </h1>
-            <p>THIS PAGE IS UNDER CONSTRUCTION</p>
+            <nav class="services-nav">
+                <a class="services-item" href="website-design-and-development.html">Website Design and Development</a>
+                <a class="services-item active" href="responsive-design.html">Responsive Design</a>
+                <a class="services-item" href="ecommerce-development.html">E-commerce Development</a>
+                <a class="services-item" href="single-page-applications.html">Single Page Applications</a>
+                <a class="services-item" href="seo-optimization.html">SEO</a>
+                <a class="services-item" href="api-integration-and-development.html">API Integration and Development</a>
+                <a class="services-item" href="ui-ux-design.html">UI/UX Design</a>
+                <a class="services-item" href="performance-optimization.html">Performance Optimization</a>
+                <a class="services-item" href="database-design-and-managment.html">Database Design and Management</a>
+            </nav>
+            <h1>Responsive Design</h1>
+            <div class="img-container">
+                <img src="../assets/images/responsive-design.webp" alt="Responsive Design Image" class="responsive-img">
+            </div>
+            <p style="font-size: 22px;">Definition &#8664;&#8664;&#8664;</p>
+            <p>Responsive desing ensures that websites adapt seamlessly to different screen sizes and devices, providing an optimal viewing experience. It involves using CSS media queries and flexible grids to adjust layout and content</p>
+            <br>
+            <p style="font-size: 22px;">Understanding &#8664;&#8664;&#8664;</p>
+            <p>By using CSS media queries and flexible grids, responsive design allows content to reflow and adjust according to the device dimensions. This approach eliminates the need for separate mobile versions of websites, enchancing accessibility and usability accros smartphones, tablets and desktops. It prioritizes user experience by delivering consistent content and functionality regardless of the device used, thereby improving engagement and reducing bounce rates.</p>
+            <br>
+            <p style="font-size: 22px;">Examples &#8664;&#8664;&#8664;</p>
+            <p>Modifying a website to display properly on smartphones, tablets and desktop computers without requiring separate mobile versions. Ensuring that navigation and content are user-friendly across devices.</p>
         </section>
     </main>
 
@@ -35,6 +48,6 @@
         <p>&copy; 2024 Filip Babić. All rights reserved.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

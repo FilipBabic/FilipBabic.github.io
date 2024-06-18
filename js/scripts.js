@@ -1,6 +1,6 @@
 console.log("Welcome to my portfolio website!");
 
-// toggle navigation menu
+// toggle navigation Menu Icon
 
 document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     navToggle.addEventListener('click', function () {
         navLinks.classList.toggle('active');
     });
+
+    // const navItems = document.querySelectorAll('services-item');
+
+    // navItems.forEach(item => {
+    //     item.addEventListener('click', () => {
+    //         navItems.forEach(nav => nav.classList.remove('active'));
+    //         item.classList.add('active');
+    //         console.log("DONE 1");
+    //     })
+    //     console.log("DOne 2");
+    // })
 });
 
 //Calculate age function
