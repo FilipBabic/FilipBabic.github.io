@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Tools | Filip Babic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" aria-label="toggle navigation">
+                <img src="assets/icons/menu.png" alt="Menu Icon" width="30" height="30">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="useful-tools.html">Useful tools</a></li>
+                <li><a href="programming-tips.html">Programming tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>How to calculate time since birth? just enter date and time of birth &#128512;</h3>
+            <br>
+            <div class="age-calculator">
+                <h1>Time Since Birth Age Calculator with code example</h1>
+                <form id="age-form">
+                    <label for="dob">Enter your date of birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="birth-hour">Hour:</label>
+                    <input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required>
+                    <label for="birth-minute">Minute:</label>
+                    <input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required>
+                    <button type="button" onclick="calculateAge()">Calculate Age</button>
+                </form>
+                <p id="result"></p>                
+                <h2>Code Example</h2>
+                    <details>
+                        <summary>SHOW THE CODE</summary>
+                        <div class="sample-code">
+                            <p style="text-align: center;font-weight: bold;">HTML:</p>
+                            <pre>
+                                <code class="language-html">
+&lt;div class="age-calculator"&gt;
+    &lt;h1&gt;Age Calculator&lt;/h1&gt;
+        &lt;form id="age-form"&gt;
+            &lt;label for="dob"&gt;Enter your date of birh:&lt;/label&gt;
+            &lt;input type="date" id="dob" name="dob" required&gt;
+            &lt;label for="birth-hour">Hour:&lt;/label&gt;
+            &lt;input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required&gt;
+            &lt;label for="birth-minute"&gt;Minute:&lt;/label&gt;
+            &lt;input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required&gt;
+            &lt;button type="button" onclick="calculateAge()"&gt;Calculate Age&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;p id="result"&gt;&lt;/p&gt;
+&lt;/div&gt;</code>
+                            </pre>
+                            <p style="text-align: center;font-weight: bold;">JavaScript:</p>
+                            <pre>
+                                <code class="language-js">
+function calculateAge() {
+    const dob = document.getElementById('dob').value;
+    const birthHour = parseInt(document.getElementById('birth-hour').value);
+    const birthMinute = parseInt(document.getElementById('birth-minute').value);
+    
+    if (dob && !isNaN(birthHour) && !isNaN(birthMinute) && !(birthHour>24) && !(birthMinute>60)) {
+        const dobDate = new Date(dob);
+        dobDate.setHours(birthHour, birthMinute, 0, 0);  // Set hour and minute of birth
+
+    const today = new Date();
+    
+    // Check if the date of birth is in the future
+    if (dobDate > today) {
+        document.getElementById('result').innerText = 'The date of birth cannot be in the future.';
+        return;
+    }
+
+    // Calculate years
+    let ageYears = today.getFullYear() - dobDate.getFullYear();
+    let ageMonths = today.getMonth() - dobDate.getMonth();
+    let ageDays = today.getDate() - dobDate.getDate();
+    let ageHours = today.getHours() - dobDate.getHours();
+    let ageMinutes = today.getMinutes() - dobDate.getMinutes();
+    let ageSeconds = today.getSeconds() - dobDate.getSeconds();
+
+    // Adjust months and years
+    if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+        ageYears--;
+        ageMonths += 12;
+    }
+
+    // Adjust days and months
+    if (ageDays < 0) {
+        ageMonths--;
+        let lastMonth = (today.getMonth() - 1 + 12) % 12;
+        let daysInLastMonth = new Date(today.getFullYear(), lastMonth + 1, 0).getDate();
+        ageDays += daysInLastMonth;
+    }
+
+    // Adjust hours and days
+    if (ageHours < 0) {
+        ageDays--;
+        ageHours += 24;
+    }
+
+    // Adjust minutes and hours
+    if (ageMinutes < 0) {
+        ageHours--;
+        ageMinutes += 60;
+    }
+
+    // Adjust seconds and minutes
+    if (ageSeconds < 0) {
+        ageMinutes--;
+        ageSeconds += 60;
+    }
+
+    document.getElementById('result').innerText = `Your age is: 
+        ${ageYears} years, 
+        ${ageMonths} months, 
+        ${ageDays} days, 
+        ${ageHours} hours, 
+        ${ageMinutes} minutes, 
+        and ${ageSeconds} seconds old.`;
+    } else {
+        document.getElementById('result').innerText = 'Please enter a valid date of birth, hour, and minute.';
+    }
+}</code>
+</pre>
+    <p style="text-align: center;font-weight: bold;">CSS:</p>
+        <pre><code class="language-css">
+.calculate-age {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculate-age h2 {
+    margin-bottom: 20px;
+}
+
+.calculate-age form {
+    margin-bottom: 20px;
+}
+
+.calculate-age input[type="date"],
+.calculate-age input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.calculate-age button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calculate-age button:hover {
+    background-color: #555;
+}
+
+#result {
+    font-size: 18px;
+    color: #333;
+}</code>
+</pre>
+
+                            
+                        </div>
+                    </details>
+                    
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h4>THIS WEBSITE IS UNDER CONSTRUCTION!!!</h4>
+        <p>&copy; 2024 Filip Babić. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

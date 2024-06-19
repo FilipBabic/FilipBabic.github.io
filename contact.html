@@ -11,24 +11,42 @@
     <header>
         <nav>
             <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="assets/icons/bars-solid.png" alt="Menu Icon" width="26" height="30">
+                <img src="assets/icons/menu.png" alt="Menu Icon" width="30" height="30">
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="useful-tools.html">Useful tools</a></li>
+                <li><a href="programming-tips.html">Programming tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>               
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <p>THIS PAGE IS UNDER CONSTRUCTION</p>
-        </section>
-    </main>
+    <div class="contact-form">
+        
+        <form action="https://formspree.io/f/xyyrrryz" method="POST">
+            <h3>Send Message</h3>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <input type="text" id="subject" name="subject" placeholder="Subject (optional)">
+
+            <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+
+            <button class="beautiful-button" type="submit">Send</button>        
+        </form>
+        <div class="contact-form-details">
+            <h3 style="margin-bottom:2.5rem">Contact Details</h3>
+            <p><strong>Name: <span style="color:#fe8d45"> Filip Babić</span></strong></p>
+            <p><strong>Address: <span style="color:#fe8d45"> Belgrade, Serbia</span></strong></p>
+            <p><strong>Email: <span style="color:#fe8d45"> filip1986babic@gmail.com</span></strong></p>
+            <p><strong>Website: <span style="color:#fe8d45"> https://filipbabic.github.io</span></strong></p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Filip Babić. All rights reserved.</p>
