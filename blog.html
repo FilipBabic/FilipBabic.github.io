@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Filip Babic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" aria-label="toggle navigation">
+                <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="useful-tools.html">Useful tools</a></li>
+                <li><a class="active" href="blog/index.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Blog</h1>
+            <div class="testimonials-container">
+                <div class="testimonial" onclick="showUnderstanding('understanding1')">
+                    <h2>How Internet Works?</h2>
+                    <p>The internet is a vast and complex network of interconnected computers and devices that communicate with each other using standardized protocols. Here is a simplified overview of how the internet works...</p>
+                    <div class="understanding" id="understanding1">
+                        <p>1. Basic Structure
+                            Clients and Servers
+                            Clients: These are the end-user devices like laptops, smartphones, tablets, and desktop computers. They initiate requests for data and services from servers.
+                            Servers: These are powerful computers that store data, websites, applications, and databases. They respond to requests from clients by sending the required data back.
+                            Routers and Switches
+                            Routers: These devices route data packets between different networks. They determine the best path for data to travel across interconnected networks to reach its destination.
+                            Switches: These devices connect multiple devices within a single network, such as in a local area network (LAN). They manage data traffic efficiently within the network by directing data to the correct device.
+                            2. Data Transmission
+                            Packets
+                            Data transmitted over the internet is broken into smaller chunks called packets. Each packet includes:
+                            Payload: The actual data being transmitted.
+                            Header: Contains metadata like source and destination IP addresses, sequence number, and error-checking information.
+                            IP Addresses
+                            IPv4: The most widely used version, represented by four sets of numbers separated by dots (e.g., 192.168.1.1).
+                            IPv6: A newer version designed to address the limitations of IPv4, using a longer format (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+                            Protocols
+                            TCP/IP: The fundamental protocols for communication over the internet.
+                            TCP: Ensures reliable transmission of data by establishing a connection and verifying that all packets are received and reassembled in the correct order.
+                            IP: Handles addressing and routing of packets to ensure they reach the correct destination.
+                            3. Domain Name System (DNS)
+                            Function: DNS translates human-readable domain names (e.g., www.example.com) into machine-readable IP addresses.
+                            DNS Servers: These servers store and manage domain name information. When a user enters a domain name, the DNS server looks up the corresponding IP address and directs the user's request to the appropriate server.
+                            4. Connecting to the Internet
+                            Internet Service Providers (ISPs)
+                            Role: ISPs provide the infrastructure and services that allow individuals and businesses to connect to the internet. They manage a network of routers, switches, and data centers.
+                            Types of Connections: ISPs offer various types of internet connections, including DSL, cable, fiber-optic, satellite, and wireless.
+                            Modems and Routers
+                            Modem: Converts the analog signal from your ISP into a digital signal that your devices can use, and vice versa.
+                            Router: Distributes the internet connection from the modem to multiple devices within a local network, either via Ethernet cables or Wi-Fi.
+                            5. Web Browsing
+                            HTTP/HTTPS
+                            HTTP (Hypertext Transfer Protocol): The protocol used for transferring web pages. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.
+                            HTTPS (HTTP Secure): An extension of HTTP that uses SSL/TLS encryption to secure data transfer, ensuring privacy and data integrity.
+                            Web Browsers
+                            Function: Browsers are software applications that interpret HTML, CSS, and JavaScript to display web pages. They manage HTTP requests to retrieve web pages from servers and render them for users.
+                            Examples: Google Chrome, Mozilla Firefox, Safari, Microsoft Edge.
+                            6. Email and Communication
+                            Email Protocols
+                            SMTP (Simple Mail Transfer Protocol): Used to send emails from a client to a server or between servers.
+                            IMAP (Internet Message Access Protocol): Allows clients to access and manage their email on a remote server, enabling multiple devices to access the same mailbox.
+                            POP3 (Post Office Protocol 3): Downloads emails from the server to the client’s device and usually deletes them from the server.
+                            Instant Messaging and VoIP
+                            Instant Messaging (IM): Allows real-time text communication over the internet. Examples include WhatsApp, Telegram, and Slack.
+                            Voice over IP (VoIP): Enables voice communication and multimedia sessions over the internet. Examples include Skype, Zoom, and Google Meet.
+                            7. Security
+                            Encryption
+                            SSL/TLS: Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are protocols that encrypt data transferred between clients and servers, protecting it from eavesdropping and tampering.
+                            Firewalls and Antivirus Software
+                            Firewalls: Network security systems that monitor and control incoming and outgoing network traffic based on predetermined security rules. They create a barrier between trusted and untrusted networks.
+                            Antivirus Software: Programs designed to detect, prevent, and remove malware and other malicious software from devices.
+                            How It All Comes Together
+                            When you use the internet, here's a step-by-step breakdown of what typically happens:
+                            
+                            Entering a URL: You type a web address into your browser.
+                            DNS Lookup: Your device queries a DNS server to find the IP address corresponding to the domain name.
+                            HTTP Request: Your browser sends an HTTP/HTTPS request to the server at the IP address.
+                            Server Response: The server processes the request and sends back the requested web page or data in packets.
+                            Data Transmission: Packets travel through routers and switches across various networks to reach your device.
+                            Rendering: Your browser assembles the packets and renders the web page for you to view.
+                            Interaction: You interact with the web page, sending further requests as needed, and the cycle continues.
+                            This complex yet highly efficient system enables the seamless flow of information and connectivity that defines the modern internet experience.</p>
+                    </div>
+                </div>
+                <div class="testimonial" onclick="showUnderstanding('understanding2')">
+                    <h2>Title 2</h2>
+                    <p>Description for testimonial 2</p>
+                    <div class="understanding" id="understanding2">
+                        <p>Understanding section for testimonial 2</p>
+                    </div>
+                </div>
+                <div class="testimonial" onclick="showUnderstanding('understanding2')">
+                    <h2>Title 2</h2>
+                    <p>Description for testimonial 2 Description for testimonial 2 Description for testimonial 2 Description for testimonial 2 Description for testimonial 2 Description for testimonial 2 Description for testimonial 2</p>
+                    <div class="understanding" id="understanding2">
+                        <p>Understanding section for testimonial 3</p>
+                    </div>
+                </div>
+                <div class="testimonial" onclick="showUnderstanding('understanding2')">
+                    <h2>Title 2</h2>
+                    <p>Description for testimonial 2</p>
+                    <div class="understanding" id="understanding2">
+                        <p>Understanding section for testimonial 4</p>
+                    </div>
+                </div>
+                <div class="testimonial" onclick="showUnderstanding('understanding2')">
+                    <h2>Title 2</h2>
+                    <p>Description for testimonial 2</p>
+                    <div class="understanding" id="understanding2">
+                        <p>Understanding section for testimonial 5</p>
+                    </div>
+                </div>
+                <div class="testimonial" onclick="showUnderstanding('understanding6')">
+                    <h2>Title 2</h2>
+                    <p>Description for testimonial 2</p>
+                    <div class="understanding" id="understanding6">
+                        <p>Understanding section for testimonial 6</p>
+                    </div>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        
+            <div class="full-screen-understanding" id="fullScreenUnderstanding">                
+                <section>
+                    <button onclick="closeFullScreen()">Close</button>
+                    <div id="understandingContent"></div>
+                </section>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>This website is currently under construction. Please check back soon for updates!</p>
+        <p>&copy; 2024 Filip Babić. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

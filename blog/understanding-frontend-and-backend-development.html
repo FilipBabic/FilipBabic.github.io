@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend vs Backend Development | Filip Babic </title>
+    <meta name="description" content="Learn the key differences between frontend and backend development. Discover best practices, tools, and technologies used in web development with Filip Babic.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" aria-label="toggle navigation">
+                <img src="../assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../useful-tools.html">Useful tools</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Understanding Frontend and Backend Development</h1>
+            <div class="blog-page-author">
+                <p>Filip Babic</p>
+                <p>Published: 22/6/2024</p>
+            </div>
+            <p>In the dynamic world of web development, understanding the distinction between frontend and backend development is crucial. These two facets of development play integral roles in creating seamless, efficient, and interactive web applications. This article delves into the intricacies of both, highlighting their unique functions, technologies, and how they work together to create the websites and applications we use every day.</p>
+            
+            <h3>Introduction</h3>
+            <p>Web development is divided into two main areas: frontend and backend development. Each area requires a different set of skills, tools, and technologies. Frontend development focuses on the user interface and user experience, while backend development is concerned with the server, database, and application logic. Together, they form the foundation of any web application.</p>
+            
+            <img src="../assets/images/frontend-development-with-code.jpg" alt="Laptop displaying a frontend code" class="responsive-img"/>
+            <h3>What is Frontend Development?</h3>
+            <p>Frontend development, also known as client-side development, involves creating everything that users interact with on a website or application. This includes the layout, design, and interactive elements. Frontend developers use HTML, CSS, and JavaScript to build the visual components and ensure that they are responsive and user-friendly.</p>
+            <h4>Key Technologies:</h4>
+            <ul>
+                <li><strong>HTML (HyperText Markup Language):</strong> The standard language for creating web pages. HTML structures the content on the web, allowing developers to define elements like headings, paragraphs, links, images, and more. It is the foundational language that gives structure to web pages and enables the embedding of other content types such as videos and interactive forms.</li>
+                <li><strong>CSS (Cascading Style Sheets):</strong> Used to style and layout web pages. CSS enables developers to control the appearance of web pages by defining styles for elements such as colors, fonts, and layouts. It allows for responsive design, ensuring that web pages look great on a variety of devices and screen sizes.</li>
+                <li><strong><a href="/" class="blog-link-content">JavaScript:</a></strong> Adds interactivity and dynamic behavior to web pages. JavaScript is a versatile language that adds interactivity to web pages, enabling features such as form validation, dynamic content updates, and complex animations. It can also be used on the server-side with environments like Node.js, making it a powerful tool for full-stack development.</li>
+                <li><strong><a href="/" class="blog-link-content"></a>Frameworks and Libraries:</strong> Tools like React, Angular, and Vue.js that simplify and enhance the development process. rameworks like React, Angular, and Vue.js provide reusable components and structure, speeding up the development process and ensuring code maintainability. These tools often come with a rich ecosystem of plugins and extensions, further enhancing their capabilities.</li>
+            </ul>
+            <h3>What is Backend Development?</h3>
+            <p>Backend development, or server-side development, is focused on the server, database, and the logic that drives the application. Backend developers ensure that the server, application, and database communicate with each other seamlessly. They handle data storage, security, and server logic.</p>
+            <h4>Key Technologies:</h4>
+            <ul>
+                <li><strong>Programming Languages:</strong> Languages such as Java, Python, Ruby, PHP, and Node.js each have unique strengths, making them suitable for different types of backend tasks. For example, Python is known for its simplicity and readability, while Node.js is praised for its non-blocking, event-driven architecture.</li>
+                <li><strong>Databases:</strong> Databases like MySQL, PostgreSQL, MongoDB, and Redis store and manage data, each offering unique features such as SQL compliance, NoSQL flexibility, or in-memory data storage for high-speed access. Choosing the right database depends on the application's specific needs, such as the type of data being stored and the required performance.</li>
+                <li><strong><a href="/" class="blog-link-content">Frameworks:</a></strong> Backend frameworks like Express, Django, Ruby on Rails, and Spring provide a structured environment for building server-side applications. They offer tools and libraries that handle common tasks, such as routing, authentication, and database interactions, allowing developers to focus on the unique aspects of their application.</li>
+            </ul>
+            <h3>The Role of APIs in Connecting Frontend and Backend</h3>
+            <p>APIs (Application Programming Interfaces) are essential in connecting the frontend and backend. They define the methods and data that different software components or systems can use to communicate with each other. In web development, APIs enable the frontend to send requests to the backend and receive data in return.</p>
+            <h4>Common API Types:</h4>
+            <ul>
+                <li><strong>REST (Representational State Transfer):</strong> A lightweight, stateless, and commonly used API architecture. REST APIs are widely used due to their simplicity and scalability, making them a popular choice for web services. They use standard HTTP methods and status codes, which makes them easy to integrate with other web technologies.</li>
+                <li><strong>GraphQL:</strong> A flexible query language for APIs that allows clients to request specific data. GraphQL allows clients to specify exactly what data they need, reducing the amount of data transferred over the network and improving performance. Its flexible query system can reduce the need for multiple API endpoints, simplifying the development and maintenance of complex applications.</li>
+            </ul>
+            <img src="../assets/images/backend-development.jpg" alt="API Backend code on monitor" class="responsive-img"/>
+            <h3>Development Workflow and Tools</h3>
+            <h4>Frontend Workflow:</h4>
+            <ul>
+                <li><strong>Code Editors:</strong> Tools like Visual Studio Code, Sublime Text, and Atom.</li>
+                <li><strong>Version Control Systems:</strong> Git and platforms like GitHub, GitLab, and Bitbucket.</li>
+                <li><strong>Build Tools:</a></strong> Webpack, Gulp, and Parcel for bundling and optimizing code.</li>
+                <li><strong>Testing:</a></strong> Tools like Jest, Mocha, and Cypress for ensuring code quality.</li>
+            </ul>
+            <h4>Backend Workflow:</h4>
+            <ul>
+                <li><strong>IDEs and Editors:</strong> IntelliJ IDEA, PyCharm, and VS Code.</li>
+                <li><strong>Version Control:</strong> Git and related platforms.</li>
+                <li><strong>CI/CD: Continuous Integration and Continuous Deployment:</a></strong> tools like Jenkins, Travis CI, and CircleCI.</li>
+                <li><strong>Testing:</a></strong> Frameworks like JUnit, PyTest, and RSpec for automated testing.</li>
+            </ul>
+            <h3>Security Considerations</h3>
+            <p>Both frontend and backend developers need to be mindful of security. Frontend developers must handle user input validation and ensure secure communication with the backend. Backend developers are responsible for protecting data, managing authentication and authorization, and preventing common security threats like SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).</p>
+            <h3>Career Paths and Skills</h3>
+            <h4>Frontend Developer:</h4>
+            <ul>
+                <li><strong>Skills:</strong> Proficiency in HTML, CSS, and JavaScript is essential for any frontend developer. Familiarity with modern frontend frameworks like React, Angular, or Vue.js is highly beneficial, as these tools are widely used in the industry to build dynamic and responsive user interfaces. Additionally, a good understanding of web performance optimization, responsive design principles, and cross-browser compatibility ensures that applications work smoothly on various devices and platforms.</li>
+                <li><strong>Roles:</strong> As a UI/UX Designer, you focus on creating intuitive and visually appealing user interfaces, often working closely with graphic designers to turn design concepts into functional interfaces. Frontend Engineers are responsible for implementing the visual and interactive aspects of web applications, translating design mockups into code, and ensuring a seamless user experience. Mobile Web Developers specialize in optimizing web applications for mobile devices, ensuring they are responsive, touch-friendly, and performant on smaller screens.</li>
+            </ul>
+            <h4>Backend Developer:</h4>
+            <ul>
+                <li><strong>Skills:</strong> A strong understanding of server-side programming languages such as Java, Python, Ruby, PHP, or Node.js is crucial for backend developers. Proficiency in database management and query languages like SQL is also important, as backend developers often work with relational or NoSQL databases to store and retrieve data. Knowledge of RESTful APIs and GraphQL is beneficial, as backend developers need to design and implement the communication layer between the frontend and backend. Additionally, skills in server, network, and hosting environments, as well as an understanding of security and data protection, are essential.</li>
+                <li><strong>Roles:</strong> Backend Engineers focus on server-side logic, database interactions, and ensuring that the backend systems support frontend functionalities effectively. Database Administrators (DBAs) manage and optimize database systems, ensuring data integrity, security, and performance, and often work on database design and migration projects. DevOps Engineers bridge the gap between development and operations, focusing on automating and streamlining the deployment process, maintaining infrastructure, and ensuring continuous integration and delivery (CI/CD) practices are in place.</li>
+            </ul>
+            <p>These expanded career paths and skill sets provide a clearer picture of the opportunities and expertise required for frontend and backend developers, highlighting the diversity of roles available and the importance of specialized knowledge in each area.</p>
+            <h3>Conclusion</h3>
+            <p>Frontend and backend development are both critical to building effective and efficient web applications. While frontend development focuses on the user interface and experience, backend development ensures the server, database, and application logic work seamlessly. Understanding the roles, technologies, and workflows of both can help developers create robust and user-friendly web applications.
+
+                Whether you're a budding developer deciding which path to pursue or an established professional looking to deepen your understanding, mastering both frontend and backend development can significantly enhance your ability to create comprehensive and high-performing web applications.</p>
+        </article>
+    </main>
+    
+    <footer>
+        <p>This website is currently under construction. Please check back soon for updates!</p>
+        <p>&copy; 2024 Filip Babić. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

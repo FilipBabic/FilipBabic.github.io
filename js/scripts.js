@@ -1,6 +1,6 @@
 console.log("Welcome to my portfolio website!");
 
-// toggle navigation Menu Icon
+// toggle navigation Menu Icon for Navigation
 
 document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
@@ -92,7 +92,16 @@ function calculateAge() {
     }
 }
 
-//SHOW SOURCE CODE 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-  }
+function showUnderstanding(id) {
+    var understandingContent = document.getElementById(id).innerHTML;
+    var fullScreenDiv = document.getElementById('fullScreenUnderstanding');
+    var contentDiv = document.getElementById('understandingContent');
+
+    contentDiv.innerHTML = understandingContent;
+    fullScreenDiv.style.display = 'block';
+}
+
+function closeFullScreen() {
+    var fullScreenDiv = document.getElementById('fullScreenUnderstanding');
+    fullScreenDiv.style.display = 'none';
+}

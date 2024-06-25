@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB services | Filip Babic</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="assets/icons/menu.png" alt="Menu Icon" width="30" height="30">
+                <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="services.html">Services</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="useful-tools.html">Useful tools</a></li>
-                <li><a href="programming-tips.html">Programming tips</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>               
             </ul>
@@ -26,6 +28,11 @@
     </header>
 
     <main>
+        <section>
+            <div class="blog-heading">
+                <h1>SERVICES</h1><h4>for your Business</h4>
+            </div>
+        </section>
         <div class="row">
             <div class="column">
                 <h3 style="height:25%">Website Design and Development</h3>
@@ -40,6 +47,36 @@
                 <p id="demo"></p>
             </div>
             <div class="column">
+                <h3 style="height:25%">SEO Optimization</h3>
+                <p>Implementing on-page SEO best practices to improve search engine rankings and increase website visibility.</p>
+                <button class="beautiful-button"><a href="services/seo-optimization.html" style="text-decoration: none;color: inherit">View More Info</a></button>
+                <p id="demo"></p>
+            </div>
+            <div class="column">
+                <h3 style="height:25%">Database Design and Management</h3>
+                <p>Designing, setting up and managing databases using technologies like MySQL, PostgreSQL or MongoDB.</p>
+                <button class="beautiful-button"><a href="services/database-design-and-managment.html" style="text-decoration: none;color: inherit">View More Info</a></button>
+                <p id="demo"></p>
+            </div>
+            <div class="column">
+                <h3 style="height:25%">API Integration and Development</h3>
+                <p>Integrating third-party APIs into websites and web applications or developing custom APIs for specific needs.</p>
+                <button class="beautiful-button"><a href="services/api-integration-and-development.html" style="text-decoration: none;color: inherit">View More Info</a></button>
+                <p id="demo"></p>
+            </div>
+            <div class="column">
+                <h3 style="height:25%">Performance Optimization</h3>
+                <p>Improving website speed and performance through techniques like caching, minification and optimizing images.</p>
+                <button class="beautiful-button"><a href="services/performance-optimization.html" style="text-decoration: none;color: inherit">View More Info</a></button>
+                <p id="demo"></p>
+            </div>
+            <div class="column">
+                <h3 style="height:25%">UI/UX Design</h3>
+                <p>Creating user interfaces and user experiences that are intuitive, engaging and optimized for user interaction.</p>
+                <button class="beautiful-button"><a href="services/ui-ux-design.html" style="text-decoration: none;color: inherit">View More Info</a></button>
+                <p id="demo"></p>
+            </div>                        
+            <div class="column">
                 <h3 style="height:25%">E-commerce Development</h3>
                 <p>Building online stores using Shopify platform or custom solutions.</p>
                 <button class="beautiful-button"><a href="services/ecommerce-development.html" style="text-decoration: none;color: inherit">View More Info</a></button>
@@ -50,37 +87,7 @@
                 <p>Building SPAs using React.js and Next.js frameworks for a seamless user experience.</p>
                 <button class="beautiful-button"><a href="services/single-page-applications.html" style="text-decoration: none;color: inherit">View More Info</a></button>
                 <p id="demo"></p>
-            </div>
-            <div class="column">
-                <h3 style="height:25%">SEO Optimization</h3>
-                <p>Implementing on-page SEO best practices to improve search engine rankings and increase website visibility.</p>
-                <button class="beautiful-button"><a href="services/seo-optimization.html" style="text-decoration: none;color: inherit">View More Info</a></button>
-                <p id="demo"></p>
-            </div>
-            <div class="column">
-                <h3 style="height:25%">API Integration and Development</h3>
-                <p>Integrating third-party APIs into websites and web applications or developing custom APIs for specific needs.</p>
-                <button class="beautiful-button"><a href="services/api-integration-and-development.html" style="text-decoration: none;color: inherit">View More Info</a></button>
-                <p id="demo"></p>
-            </div>
-            <div class="column">
-                <h3 style="height:25%">UI/UX Design</h3>
-                <p>Creating user interfaces and user experiences that are intuitive, engaging and optimized for user interaction.</p>
-                <button class="beautiful-button"><a href="services/ui-ux-design.html" style="text-decoration: none;color: inherit">View More Info</a></button>
-                <p id="demo"></p>
-            </div>
-            <div class="column">
-                <h3 style="height:25%">Performance Optimization</h3>
-                <p>Improving website speed and performance through techniques like caching, minification and optimizing images.</p>
-                <button class="beautiful-button"><a href="services/performance-optimization.html" style="text-decoration: none;color: inherit">View More Info</a></button>
-                <p id="demo"></p>
-            </div>
-            <div class="column">
-                <h3 style="height:25%">Database Design and Management</h3>
-                <p>Designing, setting up and managing databases using technologies like MySQL, PostgreSQL or MongoDB.</p>
-                <button class="beautiful-button"><a href="services/database-design-and-managment.html" style="text-decoration: none;color: inherit">View More Info</a></button>
-                <p id="demo"></p>
-            </div>
+            </div>                        
         </div>
     </main>
 

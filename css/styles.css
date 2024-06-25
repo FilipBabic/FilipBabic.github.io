@@ -83,7 +83,7 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    
+    font-weight: 600;
 }
 
 nav ul li a:hover {
@@ -94,28 +94,62 @@ nav ul li a.active{
     background-color: #fff;
     color:#00477e;
     border-radius: 4px;
+    font-weight: 700;
 }
 main {
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 section {
     margin: 0 auto;
-    max-width: 930px;
+    max-width: 780px;
     margin-bottom: 2rem;
-    padding: 2rem;
+    text-align: left;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 780px;
+    margin-bottom: 2rem;
+    padding: 5rem;
     border-radius: 4px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
 }
+
+article h1 {
+    margin: 0 0 1.25rem 0;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    color:#00345a;
+}
+
+article h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+article h4 {
+    text-align: left;
+    color:#ee773b;
+    margin: 1rem 0;
+    font-size: 1.15rem; 
+    font-weight: 600;
+}
+
+article ol li {
+    margin-bottom: 1rem;
+}
 /* shade of blue color #7cacf8  */
 h1 {
     text-align: center;
     color: #292c34;
-    margin: 1rem 0;
+    font-size: 2rem;
 }
 h2 {
     text-align: center;
@@ -128,8 +162,7 @@ h3 {
 }
 h4 {
     text-align: center;
-    color:#fe8d45;
-    margin: 1rem 0;
+    color:#ee773b;
 }
 p {
     padding: 10px 0;
@@ -142,7 +175,161 @@ footer {
     margin-top: auto;
     width: 100%;
 }
+/* blog settings */
+.blog {
+    max-width: 1080px;
+}
 
+.blog-heading {
+    display:flex;
+    flex-direction: row;
+    width: 780px;
+    border-bottom: 3px solid #00477e;
+    margin: 0 auto;
+}
+
+.blog-heading h1 {
+    color: #00477e;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+.blog-heading h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size:22px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    padding-left: 10px;
+}
+
+.blog-main {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border-radius: 4px;    
+}
+
+.blog-main .left {
+    width: 60%;
+    margin: 2rem;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-main .left h1 {
+    background-color: white;
+    color: #00345a;
+    padding: 0 2rem;
+    font-size: 1.75rem;
+}
+
+.blog-main .left p {
+    background-color: white;
+    padding: 1rem;
+    text-align: justify;
+}
+.blog-img-container{
+    height: 17.8rem;
+    overflow: hidden;
+}
+.blog-main .left img {
+    width: 100%;
+    height: auto;
+}
+.blog-main .right {
+    width: 40%;
+}
+
+.blog-main .right h4 {
+    text-align: left;
+    color:#ee773b;
+    margin: 2rem 0 0 0;
+}
+
+.blog-post-small-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border-bottom: 1px dotted #00477e; */
+    padding: 16px 0;
+}
+
+.blog-post-small-card img{
+    max-width: 152px;
+    height: 90px;
+    padding: 0;
+}
+
+.blog-post-sm-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.5rem;
+    width:100%;
+}
+
+.blog-post-small-card .top {
+    font-size: .875rem;
+    font-weight: 800;
+    line-height: 1.57;
+}
+
+.blog-post-small-card .top a {
+    text-decoration: none;
+    color:#00345a;
+}
+
+.blog-link {
+    text-decoration: none;
+    color:#00345a;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
+
+.blog-post-small-card .top a:hover {
+    text-decoration: underline;
+}
+
+.blog-post-small-card .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .835rem;
+    font-weight: 300;
+    color:#516f90;
+    line-height: 1.57;
+}
+
+.blog-page-author {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ee773b;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0 0.3rem 0;
+    border-top: 3px solid #00477e;
+    border-bottom: 3px solid #00477e;    
+}
+
+.blog-page-author p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.blog-link-content {
+    color:#00345a;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.blog-link-content:hover {
+    color:#ee773b;
+}
 #services {
     display: flex;
     flex-direction: row;
@@ -280,7 +467,7 @@ pre {
 
 .responsive-img{
     width: 100%;
-    max-width: 600px;
+    max-width: 660px;
     height: auto;
 }
 
@@ -364,6 +551,51 @@ pre {
     padding: 3rem;
     width: 40%;
 }
+
+.testimonials-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .testimonial {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 calc(50% - 20px);
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    
+    .testimonial h2 {
+        margin-top: 0;
+    }
+    
+    .understanding {
+        display: none;
+    }
+    
+    .full-screen-understanding {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        z-index: 1000;
+    }
+    
+    .full-screen-understanding button {
+        /* position: absolute; */
+        top: 10px;
+        right: 10px;
+    }
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
@@ -406,7 +638,41 @@ pre {
     nav ul li a{
         color: #e7dede
     }
-    
+    section {
+        padding: 1rem;
+    }
+    article {
+        padding: 2rem;
+    }
+    article h1 {
+        font-size: 2rem;
+    }
+    .blog-main {
+        flex-direction: column;
+    }
+    .blog-main .left {
+        width: 100%;
+        margin:2rem 0 0 0;
+    }
+    .blog-main .right {
+        width: 100%;
+    }
+    .blog-heading {
+        width: 100%;
+    }
+    .blog-heading h1 {
+        font-size: 33px;
+    }
+    .blog-heading h4 {
+        font-size: 18px;
+        padding-bottom: 6px;
+    }
+
+    .blog-img-container{
+        height: auto;
+        background-color: white;
+    }
+
     .services-item {
         display: flex;
         flex-direction: column;
@@ -457,6 +723,9 @@ pre {
         font-size: 15px;
     }
 
+    .testimonial {
+        flex: 1 1 calc(50% - 20px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -469,5 +738,9 @@ pre {
 
     main {
         padding: 0.5rem;
+    }
+
+    .testimonial {
+        flex: 1 1 100%;
     }
 }
