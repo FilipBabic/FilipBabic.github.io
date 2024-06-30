@@ -105,3 +105,12 @@ function closeFullScreen() {
     var fullScreenDiv = document.getElementById('fullScreenUnderstanding');
     fullScreenDiv.style.display = 'none';
 }
+
+function toggleContent() {
+    var content = document.getElementById("the-story");
+    if (content.style.display === "" || content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
