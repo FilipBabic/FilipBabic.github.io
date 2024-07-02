@@ -33,11 +33,87 @@
                 <h1>JavaScript</h1><h4>mini programs</h4>
             </div>
             <br>
-            <br>
-            <h3>How to calculate time since birth? just enter date and time of your birth &#128512;</h3>
-            <br>
-            <div class="age-calculator">
-                <h1>Time Since Birth Age Calculator</h1>
+            <div class="js-programs-card">
+                <h1>Current Time and Location:</h1>
+                <p>This is your browser current time and location. To convert latitude and longitude coordinates into a human-readable location string (like a city name or address), you typically need to use a reverse geocoding service. One of the most commonly used services for this purpose is the <a href="https://developers.google.com/maps/documentation/geocoding/overview" target="_blank" class="blog-link-content">Google Maps Geocoding API</a> or <a href="https://docs.mapbox.com/api/search/geocoding/" target="_blank" class="blog-link-content">Mapbox Geocoding API</a></p>
+                <div id="clock" class="clock"></div>
+                <div id="location" class="location"></div>
+                <h3>Code Example</h3>
+                    <details>
+                        <summary>SHOW THE CODE</summary>
+                        <div class="sample-code">
+                            <p style="text-align: center;font-weight: bold;">HTML:</p>
+                            <pre>
+                                <code class="language-html">
+&lt;h1&gt;Current Time and Location:&lt;/h1&gt;
+&lt;div id="clock" class="clock"&gt;&lt;/div&gt;</code>
+&lt;id="location" class="location"&gt;&lt;/div&gt;</code>
+                            </pre>
+                            <p style="text-align: center;font-weight: bold;">JavaScript:</p>
+                            <pre>
+                                <code class="language-js">
+function updateClock() {
+    const clockDiv = document.getElementById('clock');
+    const locationDiv = document.getElementById('location');
+
+    // Get current time
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    // Display current time
+    clockDiv.textContent = `${hours}:${minutes}:${seconds}`;
+
+    // Get current location
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            const lat = position.coords.latitude.toFixed(6);
+            const lon = position.coords.longitude.toFixed(6);
+            locationDiv.textContent = `Latitude: ${lat}, Longitude: ${lon}`;
+        }, (error) => {
+            locationDiv.textContent = `Geolocation error: ${error.message}`;
+        });
+    } else {
+        locationDiv.textContent = 'Geolocation is not supported by this browser.';
+    }
+}
+
+// Initial call to display the clock immediately on page load
+updateClock();
+
+// Update the clock every second
+setInterval(updateClock, 1000);</code>
+</pre>                      
+                        </div>
+                        <h2>Explanation</h2>
+                        <ol>
+                            <li>Display Current Time:
+                                <ul><li>The 'updateClock' function retrieves the current time using 'new Date()' and formats it to ensure two digits for hours, minutes, and seconds.</li></ul>
+                            </li>
+                            
+                            <li>Display Browser Location:
+                                <ul><li>If 'navigator.geolocation' is supported, 'getCurrentPosition' is called to get the user's current position (latitude and longitude). The values are rounded to six decimal places for readability and displayed in the 'locationDiv'.</li></ul>
+                            </li>
+                            
+                            <li>Error Handling:
+                                <ul><li>If geolocation is not supported or if there's an error fetching the location, an appropriate message is displayed in the 'locationDiv'.</li></ul>
+                            </li>
+                            
+                            <li>Interval Update:
+                                <ul>
+                                    <li>The 'updateClock' function is initially called to display the clock and location immediately on page load.</li>
+                                    <li>'setInterval' is used to call 'updateClock' every second to update both the clock and location continuously.</li>
+                                </ul>
+                            </li>
+                            
+                            </ol>
+                    </details>
+            </div>
+            <div class="js-programs-card">
+                <h1>Time Since Birth, Age Calculator</h1>
+                <p>Here you can calculate years, months, days, minutes and seconds since your birth. Enter the correct date and time of birth and click the button. Below is a code example of this program:</p>
+                <br>
                 <form id="age-form">
                     <label for="dob">Enter your date of birth:</label>
                     <input type="date" id="dob" name="dob" required>
@@ -47,15 +123,16 @@
                     <input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required>
                     <button type="button" onclick="calculateAge()">Calculate Age</button>
                 </form>
-                <p id="result"></p>                
-                <h2>Code Example</h2>
+                <br>
+                <p id="result" style="display: none;"></p>                
+                <h3>Code Example</h3>
                     <details>
                         <summary>SHOW THE CODE</summary>
                         <div class="sample-code">
                             <p style="text-align: center;font-weight: bold;">HTML:</p>
                             <pre>
                                 <code class="language-html">
-&lt;div class="age-calculator"&gt;
+&lt;div class="js-programs-card"&gt;
     &lt;h1&gt;Age Calculator&lt;/h1&gt;
         &lt;form id="age-form"&gt;
             &lt;label for="dob"&gt;Enter your date of birh:&lt;/label&gt;
@@ -140,59 +217,11 @@ function calculateAge() {
         document.getElementById('result').innerText = 'Please enter a valid date of birth, hour, and minute.';
     }
 }</code>
-</pre>
-    <p style="text-align: center;font-weight: bold;">CSS:</p>
-        <pre><code class="language-css">
-.calculate-age {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.calculate-age h2 {
-    margin-bottom: 20px;
-}
-
-.calculate-age form {
-    margin-bottom: 20px;
-}
-
-.calculate-age input[type="date"],
-.calculate-age input[type="number"] {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.calculate-age button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-.calculate-age button:hover {
-    background-color: #555;
-}
-
-#result {
-    font-size: 18px;
-    color: #333;
-}</code>
-</pre>
-
-                            
+</pre>                      
                         </div>
                     </details>
-                    
             </div>
+            <button class="scroll-to-top" onclick="scrollToTop()"><img src="assets/icons/scroll-to-top.webp"></button>
         </section>
     </main>
     
@@ -223,5 +252,6 @@ function calculateAge() {
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/clock-location.js"></script>
 </body>
 </html>

@@ -1,7 +1,5 @@
 console.log("Welcome to my portfolio website!");
 
-// toggle navigation Menu Icon for Navigation
-
 document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -9,17 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navToggle.addEventListener('click', function () {
         navLinks.classList.toggle('active');
     });
-
-    // const navItems = document.querySelectorAll('services-item');
-
-    // navItems.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         navItems.forEach(nav => nav.classList.remove('active'));
-    //         item.classList.add('active');
-    //         console.log("DONE 1");
-    //     })
-    //     console.log("DOne 2");
-    // })
 });
 
 //Calculate age function
@@ -36,6 +23,7 @@ function calculateAge() {
         
         // Check if the date of birth is in the future
         if (dobDate > today) {
+            document.getElementById('result').style.display = 'block';
             document.getElementById('result').innerText = 'The date of birth cannot be in the future.';
             return;
         }
@@ -79,7 +67,7 @@ function calculateAge() {
             ageMinutes--;
             ageSeconds += 60;
         }
-
+        document.getElementById('result').style.display = 'block';
         document.getElementById('result').innerText = `Your age is: 
             ${ageYears} years, 
             ${ageMonths} months, 
@@ -88,6 +76,7 @@ function calculateAge() {
             ${ageMinutes} minutes, 
             and ${ageSeconds} seconds old.`;
     } else {
+        document.getElementById('result').style.display = 'block';
         document.getElementById('result').innerText = 'Please enter a valid date of birth, hour, and minute.';
     }
 }
@@ -112,5 +101,23 @@ function toggleContent() {
         content.style.display = "block";
     } else {
         content.style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Optional, smooth scrolling animation
+    });
+}
+
+// Show/hide scroll to top button based on scroll position
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-to-top').style.display = 'block';
+    } else {
+        document.querySelector('.scroll-to-top').style.display = 'none';
     }
 }

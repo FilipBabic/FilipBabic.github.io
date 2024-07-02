@@ -505,23 +505,24 @@ footer p {
     flex-wrap: wrap;
 }
 
-.age-calculator {
+.js-programs-card {
     background: #fff;
-    padding: 20px;
+    margin-bottom: 2rem;
+    padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
-.age-calculator h1 {
+.js-programs-card p {
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.js-programs-card form {
     margin-bottom: 20px;
 }
 
-.age-calculator form {
-    margin-bottom: 20px;
-}
-
-.age-calculator input[type="date"], 
-.age-calculator input[type="number"] {
+.js-programs-card input[type="date"], 
+.js-programs-card input[type="number"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -529,7 +530,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-.age-calculator button {
+.js-programs-card button {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #00345a;
@@ -539,11 +540,36 @@ footer p {
     font-weight: bold;
     cursor: pointer;
 }
-
-.age-calculator button:hover {
-    background-color: #555;
+.js-programs-card h3 {
+    border-top: 2px solid #00477e;
+    padding-top: 1rem;
+}
+.js-programs-card ol li {
+    text-align: left;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
+.js-programs-card ol li ul li {
+    text-align: left;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.js-programs-card button:hover {
+    background-color: #f5f5f5;
+}
+
+.clock{
+    color: #fe8d45;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.location {
+    color: #115836;
+    font-weight: 700;
+
+}
 #result {
     font-size: 18px;
     font-weight: bold;
@@ -746,6 +772,18 @@ pre {
         font-weight: 500;
         text-align: justify;
     }
+    .scroll-to-top {
+        display: none;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        background-color: #f5f5f5;
+        border: none;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
 
 @media (max-width: 768px) {
     main {
@@ -882,13 +920,13 @@ pre {
         grid-template-columns: 1fr;
 
     }
-    .age-calculator form {
+    .js-programs-card form {
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
     }
 
-    .age-calculator{
+    .js-programs-card{
         padding: 1rem;
     }
 
