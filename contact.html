@@ -1,86 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filip Babic | Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="javascript-programs.html">JS Programs</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>               
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="blog-heading">
-            <h1>CONTACT</h1>
+      <nav>
+        <div class="nav-toggle" aria-label="toggle navigation">
+          <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30" />
         </div>
-    </section>
-    <div class="contact-form">
-        
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="javascript-programs.html">JS Programs</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="blog-heading">
+          <h1>CONTACT</h1>
+        </div>
+      </section>
+      <div class="contact-form">
         <form action="https://formspree.io/f/xyyrrryz" method="POST">
-            <h3>Send Message</h3>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+          <h3>Send Message</h3>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            autocomplete="name"
+            required
+          />
 
-            <input type="email" id="email" name="email" placeholder="Email" required>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            required
+          />
 
-            <input type="text" id="subject" name="subject" placeholder="Subject (optional)">
+          <input type="text" id="subject" name="subject" placeholder="Subject (optional)" />
 
-            <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+          <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
 
-            <button class="beautiful-button" type="submit">Send</button>        
+          <button class="beautiful-button" type="submit">Send</button>
         </form>
         <div class="contact-form-details">
-            <h3 style="margin-bottom:2.5rem">Contact Details</h3>
-            <p><strong>Name: <span style="color:#fe8d45"> Filip Babić</span></strong></p>
-            <p><strong>Address: <span style="color:#fe8d45"> Belgrade, Serbia</span></strong></p>
-            <p><strong>Email: <span style="color:#fe8d45"> filip1986babic@gmail.com</span></strong></p>
-            <p><strong>Website: <span style="color:#fe8d45"> https://filipbabic.github.io</span></strong></p>
-            <p><strong>GitHub: <span style="color:#fe8d45"> https://github.com/FilipBabic</span></strong></p>
+          <h3>Contact Details</h3>
+          <p>
+            <strong>Name: <br /><span> Filip Babić</span></strong>
+          </p>
+          <p>
+            <strong>Address: <br /><span> Belgrade, Serbia</span></strong>
+          </p>
+          <p>
+            <strong>Email: <br /><span> filip1986babic@gmail.com</span></strong>
+          </p>
+          <p>
+            <strong>Website: <br /><span> https://filipbabic.github.io</span></strong>
+          </p>
+          <p>
+            <strong>GitHub: <br /><span> https://github.com/FilipBabic</span></strong>
+          </p>
         </div>
-    </div>
-    <button class="scroll-to-top" onclick="scrollToTop()"><img src="assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon"></button>
+      </div>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        <img src="assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon" />
+      </button>
+    </main>
     <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="index.html" class="footer-link">Home</a></li>
-                <li><a href="services.html" class="footer-link">Services</a></li>
-                <li><a href="services/website-design-and-development.html" class="footer-link">Services Info</a></li>
-                <li><a href="projects.html" class="footer-link">Projects</a></li>
-            </ul>
-            <ul>
-                <li><a href="blog/index.html" class="footer-link">Blog</a></li>
-                <li><a href="javascript-programs.html" class="footer-link">JS Programs</a></li>
-                <li><a href="blog/definitions.html" class="footer-link">Definitions</a></li>
-                <li><a href="about.html" class="footer-link">About</a></li>
-                <li><a href="contact.html" class="footer-link">Contact</a></li>
-            </ul>   
-            <img src="assets/icons/main-logo.png" height="120" width="120">             
-        </div>
+      <div class="footer-content">
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li>
+            <a href="services/website-design-and-development.html" class="footer-link"
+              >Services Info</a
+            >
+          </li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+          <li><a href="javascript-programs.html" class="footer-link">JS Programs</a></li>
+          <li><a href="blog/definitions.html" class="footer-link">Definitions</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+        </ul>
+
         <div>
-            <p>filip1986babic@gmail.com</p>
-            <div >
-                <a href="https://github.com/FilipBabic/" target="_blank"><img src="assets/icons/github-icon.webp" height="40" width="40" alt="GitHub Icon" title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"><img src="assets/icons/linedin-icon.webp" height="40" width="40" alt="LinkedIn Icon" title="LinkedIn"></a>
-            </div>
-        &copy; 2024 Filip Babić. All rights reserved.
+          <p>filip1986babic@gmail.com</p>
+          <a href="https://github.com/FilipBabic/" target="_blank"
+            ><img
+              src="assets/icons/github-icon.webp"
+              height="40"
+              width="40"
+              alt="GitHub Icon"
+              title="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"
+            ><img
+              src="assets/icons/linedin-icon.webp"
+              height="40"
+              width="40"
+              alt="LinkedIn Icon"
+              title="LinkedIn"
+          /></a>
+          <br />
+          <a href="contact.html" class="footer-link">Contact page</a>
+        </div>
+      </div>
+      &copy; 2024 Filip Babić. All rights reserved.
     </footer>
 
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>

@@ -1,257 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Programs | Filip Babic</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a class="active" href="javascript-programs.html">JS Programs</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>               
-            </ul>
-        </nav>
+      <nav>
+        <div class="nav-toggle" aria-label="toggle navigation">
+          <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="javascript-programs.html">JS Programs</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <div class="blog-heading">
-                <h1>JavaScript</h1><h4>mini programs</h4>
-            </div>
-            <br>
-            <div class="js-programs-card">
-                <h1>Current Time and Location:</h1>
-                <p>This is your browser current time and location. To convert latitude and longitude coordinates into a human-readable location string (like a city name or address), you typically need to use a reverse geocoding service. One of the most commonly used services for this purpose is the <a href="https://developers.google.com/maps/documentation/geocoding/overview" target="_blank" class="blog-link-content">Google Maps Geocoding API</a> or <a href="https://docs.mapbox.com/api/search/geocoding/" target="_blank" class="blog-link-content">Mapbox Geocoding API</a></p>
-                <div id="clock" class="clock"></div>
-                <div id="location" class="location"></div>
-                <h3>Code Example</h3>
-                    <details>
-                        <summary>SHOW THE CODE</summary>
-                        <div class="sample-code">
-                            <p style="text-align: center;font-weight: bold;">HTML:</p>
-                            <pre>
-                                <code class="language-html">
-&lt;h1&gt;Current Time and Location:&lt;/h1&gt;
-&lt;div id="clock" class="clock"&gt;&lt;/div&gt;</code>
-&lt;id="location" class="location"&gt;&lt;/div&gt;</code>
-                            </pre>
-                            <p style="text-align: center;font-weight: bold;">JavaScript:</p>
-                            <pre>
-                                <code class="language-js">
-function updateClock() {
-    const clockDiv = document.getElementById('clock');
-    const locationDiv = document.getElementById('location');
-
-    // Get current time
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-
-    // Display current time
-    clockDiv.textContent = `${hours}:${minutes}:${seconds}`;
-
-    // Get current location
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-            const lat = position.coords.latitude.toFixed(6);
-            const lon = position.coords.longitude.toFixed(6);
-            locationDiv.textContent = `Latitude: ${lat}, Longitude: ${lon}`;
-        }, (error) => {
-            locationDiv.textContent = `Geolocation error: ${error.message}`;
-        });
-    } else {
-        locationDiv.textContent = 'Geolocation is not supported by this browser.';
-    }
-}
-
-// Initial call to display the clock immediately on page load
-updateClock();
-
-// Update the clock every second
-setInterval(updateClock, 1000);</code>
-</pre>                      
-                        </div>
-                        <h2>Explanation</h2>
-                        <ol>
-                            <li>Display Current Time:
-                                <ul><li>The 'updateClock' function retrieves the current time using 'new Date()' and formats it to ensure two digits for hours, minutes, and seconds.</li></ul>
-                            </li>
-                            
-                            <li>Display Browser Location:
-                                <ul><li>If 'navigator.geolocation' is supported, 'getCurrentPosition' is called to get the user's current position (latitude and longitude). The values are rounded to six decimal places for readability and displayed in the 'locationDiv'.</li></ul>
-                            </li>
-                            
-                            <li>Error Handling:
-                                <ul><li>If geolocation is not supported or if there's an error fetching the location, an appropriate message is displayed in the 'locationDiv'.</li></ul>
-                            </li>
-                            
-                            <li>Interval Update:
-                                <ul>
-                                    <li>The 'updateClock' function is initially called to display the clock and location immediately on page load.</li>
-                                    <li>'setInterval' is used to call 'updateClock' every second to update both the clock and location continuously.</li>
-                                </ul>
-                            </li>
-                            
-                            </ol>
-                    </details>
-            </div>
-            <div class="js-programs-card">
-                <h1>Time Since Birth, Age Calculator</h1>
-                <p>Here you can calculate years, months, days, minutes and seconds since your birth. Enter the correct date and time of birth and click the button. Below is a code example of this program:</p>
-                <br>
-                <form id="age-form">
-                    <label for="dob">Enter your date of birth:</label>
-                    <input type="date" id="dob" name="dob" required>
-                    <label for="birth-hour">Hour:</label>
-                    <input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required>
-                    <label for="birth-minute">Minute:</label>
-                    <input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required>
-                    <button type="button" onclick="calculateAge()">Calculate Age</button>
-                </form>
-                <br>
-                <p id="result" style="display: none;"></p>                
-                <h3>Code Example</h3>
-                    <details>
-                        <summary>SHOW THE CODE</summary>
-                        <div class="sample-code">
-                            <p style="text-align: center;font-weight: bold;">HTML:</p>
-                            <pre>
-                                <code class="language-html">
-&lt;div class="js-programs-card"&gt;
-    &lt;h1&gt;Age Calculator&lt;/h1&gt;
-        &lt;form id="age-form"&gt;
-            &lt;label for="dob"&gt;Enter your date of birh:&lt;/label&gt;
-            &lt;input type="date" id="dob" name="dob" required&gt;
-            &lt;label for="birth-hour">Hour:&lt;/label&gt;
-            &lt;input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required&gt;
-            &lt;label for="birth-minute"&gt;Minute:&lt;/label&gt;
-            &lt;input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required&gt;
-            &lt;button type="button" onclick="calculateAge()"&gt;Calculate Age&lt;/button&gt;
-        &lt;/form&gt;
-        &lt;p id="result"&gt;&lt;/p&gt;
-&lt;/div&gt;</code>
-                            </pre>
-                            <p style="text-align: center;font-weight: bold;">JavaScript:</p>
-                            <pre>
-                                <code class="language-js">
-function calculateAge() {
-    const dob = document.getElementById('dob').value;
-    const birthHour = parseInt(document.getElementById('birth-hour').value);
-    const birthMinute = parseInt(document.getElementById('birth-minute').value);
-    
-    if (dob && !isNaN(birthHour) && !isNaN(birthMinute) && !(birthHour>24) && !(birthMinute>60)) {
-        const dobDate = new Date(dob);
-        dobDate.setHours(birthHour, birthMinute, 0, 0);  // Set hour and minute of birth
-
-    const today = new Date();
-    
-    // Check if the date of birth is in the future
-    if (dobDate > today) {
-        document.getElementById('result').innerText = 'The date of birth cannot be in the future.';
-        return;
-    }
-
-    // Calculate years
-    let ageYears = today.getFullYear() - dobDate.getFullYear();
-    let ageMonths = today.getMonth() - dobDate.getMonth();
-    let ageDays = today.getDate() - dobDate.getDate();
-    let ageHours = today.getHours() - dobDate.getHours();
-    let ageMinutes = today.getMinutes() - dobDate.getMinutes();
-    let ageSeconds = today.getSeconds() - dobDate.getSeconds();
-
-    // Adjust months and years
-    if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
-        ageYears--;
-        ageMonths += 12;
-    }
-
-    // Adjust days and months
-    if (ageDays < 0) {
-        ageMonths--;
-        let lastMonth = (today.getMonth() - 1 + 12) % 12;
-        let daysInLastMonth = new Date(today.getFullYear(), lastMonth + 1, 0).getDate();
-        ageDays += daysInLastMonth;
-    }
-
-    // Adjust hours and days
-    if (ageHours < 0) {
-        ageDays--;
-        ageHours += 24;
-    }
-
-    // Adjust minutes and hours
-    if (ageMinutes < 0) {
-        ageHours--;
-        ageMinutes += 60;
-    }
-
-    // Adjust seconds and minutes
-    if (ageSeconds < 0) {
-        ageMinutes--;
-        ageSeconds += 60;
-    }
-
-    document.getElementById('result').innerText = `Your age is: 
-        ${ageYears} years, 
-        ${ageMonths} months, 
-        ${ageDays} days, 
-        ${ageHours} hours, 
-        ${ageMinutes} minutes, 
-        and ${ageSeconds} seconds old.`;
-    } else {
-        document.getElementById('result').innerText = 'Please enter a valid date of birth, hour, and minute.';
-    }
-}</code>
-</pre>                      
-                        </div>
-                    </details>
-            </div>
-            <button class="scroll-to-top" onclick="scrollToTop()"><img src="assets/icons/scroll-to-top.webp"></button>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="index.html" class="footer-link">Home</a></li>
-                <li><a href="services.html" class="footer-link">Services</a></li>
-                <li><a href="services/website-design-and-development.html" class="footer-link">Services Info</a></li>
-                <li><a href="projects.html" class="footer-link">Projects</a></li>
-            </ul>
-            <ul>
-                <li><a href="blog/index.html" class="footer-link">Blog</a></li>
-                <li><a href="javascript-programs.html" class="footer-link">JS Programs</a></li>
-                <li><a href="blog/definitions.html" class="footer-link">Definitions</a></li>
-                <li><a href="about.html" class="footer-link">About</a></li>
-                <li><a href="contact.html" class="footer-link">Contact</a></li>
-            </ul>   
-            <img src="assets/icons/main-logo.png" height="120" width="120">             
+      <section>
+        <div class="blog-heading">
+          <h1>JAVA SCRIPT</h1>
+          <h4>programs</h4>
         </div>
+        <br />
+        <div class="js-programs-card">
+          <h1>Current Time</h1>
+          <p>This is your browser current time</p>
+          <div id="clock" class="clock"></div>
+        </div>
+        <div class="js-programs-card">
+          <h1>Time Since Birth, Age Calculator</h1>
+          <p>
+            Here you can calculate years, months, days, minutes and seconds since your birth. Enter
+            the correct date and time of birth and click the button. Below is a code example of this
+            program:
+          </p>
+          <br />
+          <form id="age-form">
+            <label for="dob">Enter your date of birth:</label>
+            <input type="date" id="dob" name="dob" required />
+            <label for="birth-hour">Hour:</label>
+            <input type="number" id="birth-hour" name="birth-hour" min="0" max="23" required />
+            <label for="birth-minute">Minute:</label>
+            <input type="number" id="birth-minute" name="birth-minute" min="0" max="59" required />
+            <button class="beautiful-button" type="button" onclick="calculateAge()">
+              Calculate Age
+            </button>
+          </form>
+          <p id="result" style="display: none"></p>
+        </div>
+        <button class="scroll-to-top" onclick="scrollToTop()">
+          <img src="assets/icons/scroll-to-top.webp" />
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li>
+            <a href="services/website-design-and-development.html" class="footer-link"
+              >Services Info</a
+            >
+          </li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+          <li><a href="javascript-programs.html" class="footer-link">JS Programs</a></li>
+          <li><a href="blog/definitions.html" class="footer-link">Definitions</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+        </ul>
+
         <div>
-            <p>filip1986babic@gmail.com</p>
-            <div >
-                <a href="https://github.com/FilipBabic/" target="_blank"><img src="assets/icons/github-icon.webp" height="40" width="40" alt="GitHub Icon" title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"><img src="assets/icons/linedin-icon.webp" height="40" width="40" alt="LinkedIn Icon" title="LinkedIn"></a>
-            </div>
-        &copy; 2024 Filip Babić. All rights reserved.
+          <p>filip1986babic@gmail.com</p>
+          <a href="https://github.com/FilipBabic/" target="_blank"
+            ><img
+              src="assets/icons/github-icon.webp"
+              height="40"
+              width="40"
+              alt="GitHub Icon"
+              title="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"
+            ><img
+              src="assets/icons/linedin-icon.webp"
+              height="40"
+              width="40"
+              alt="LinkedIn Icon"
+              title="LinkedIn"
+          /></a>
+          <br />
+          <a href="contact.html" class="footer-link">Contact page</a>
+        </div>
+      </div>
+      &copy; 2024 Filip Babić. All rights reserved.
     </footer>
 
-    <script src="js/scripts.js"></script>
-    <script src="js/clock-location.js"></script>
-</body>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/age-calculator.js" defer></script>
+  </body>
 </html>

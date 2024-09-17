@@ -1,84 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filip Babic | Web Developer | Digital Services</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
-            </div>
-            <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="javascript-programs.html">JS Programs</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>               
-            </ul>
-        </nav>
+      <nav>
+        <div class="nav-toggle" aria-label="toggle navigation">
+          <img src="assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30" />
+        </div>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="javascript-programs.html">JS Programs</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="intro">
-            <h1>Filip Babic | Web Developer</h1>
-            <br>
-        
-            <p>Welcome to my portfolio website, your all-in-one resource for web development, insightful blog posts, and JS Programs. Here, you will find a curated showcase of my professional work, along with valuable programming insights and a selection of small, engaging programs that are both enjoyable and practical. Dive in to explore my expertise and discover how I can help bring your projects to life.<p>
-             <h2>About This Site</h2>   
-             <p>This site is meticulously designed using the latest web development technologies to ensure a seamless and engaging user experience. The site is fully responsive, making it accessible and visually appealing on any device, whether you're browsing on a desktop, tablet, or smartphone.</p>
-            
-            <h2>
-                What You'll Find Here?
-            </h2>
-            <h3 style="text-align: left;">1. My Web Portfolio:</h3>
-            <p>Explore a showcase of my professional work, including past projects, services offered, and achievements in the field of web development. This portfolio highlights my skills, expertise, and the value I can bring to your next project.</p>
-            <h3 style="text-align: left;">2. Blog and Definitions:</h3>
-            <p>Dive into a wealth of programming knowledge with detailed tips and definitions that cover a wide range of topics. Whether you're a beginner or an experienced developer, you'll find valuable insights to enhance your understanding and improve your coding practices.</p>
-            <h3 style="text-align: left;">3. Small and Funny Useful Programs:</h3>
-            <p>Enjoy a variety of simple yet entertaining programs designed to be both fun and educational. These small applications demonstrate practical coding techniques and provide a playful way to learn new skills.</p>
-            
-            <h2>Let's Work Together</h2>
-            <p><strong>I'm always excited to collaborate on new and challenging projects. If you're interested in professional cooperation or have any inquiries, please don't hesitate to reach out. Visit the <a href="contact.html">contact page</a> to get in touch, and let's explore how we can work together to bring your ideas to life.</strong></p>
-            <p>Thank you for visiting my portfolio website. I hope you find this site both informative and inspiring, and I look forward to the possibility of working with you.</p>
-            <button class="scroll-to-top" onclick="scrollToTop()"><img src="assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon"></button>
-        </section>
-        
+      <section>
+        <h1>Filip Babic | Web Developer</h1>
+
+        <p>
+          Welcome to my portfolio website, where you can explore my web development work, read
+          helpful blog posts, and check out JavaScript programs. You'll find examples of my
+          projects, along with tips and insights on programming. Feel free to browse through and see
+          how my skills can help with your ideas. Let's bring your projects to life together!
+        </p>
+        <p></p>
+        <h2>About This Site</h2>
+        <p>
+          This site is built using the classic combination of HTML, CSS, and JavaScript to deliver a
+          smooth and enjoyable user experience. It’s fully responsive, ensuring it looks great and
+          works seamlessly on any device, from desktops to tablets and smartphones.
+        </p>
+
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="assets/images/desktop/main-image-desktop-v1.webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/images/tablet/main-image-tablet-v1.webp"
+          />
+          <img
+            src="assets/images/mobile/main-image-mobile-v1.webp"
+            alt="Modern web developer portfolio with sleek desk setup, laptop displaying code, and creative workspace"
+            style="width: 100%; height: auto"
+          />
+        </picture>
+
+        <h2>What You'll Find Here?</h2>
+        <h3><a href="about.html" class="link-main">1. My Web Portfolio:</a></h3>
+        <p>
+          Explore a showcase of my professional work, including past
+          <a href="projects.html" class="link-main">projects</a>,
+          <a href="services.html" class="link-main">services</a> offered, and achievements in the
+          field of web development. This portfolio highlights my skills, expertise, and the value I
+          can bring to your next project.
+        </p>
+        <h3>
+          2. <a href="blog/index.html" class="link-main">Blog</a> and
+          <a href="blog/definitions.html" class="link-main">Definitions:</a>
+        </h3>
+        <p>
+          Dive into a wealth of programming knowledge with detailed tips and definitions that cover
+          a wide range of topics. Whether you're a beginner or an experienced developer, you'll find
+          valuable insights to enhance your understanding and improve your coding practices.
+        </p>
+        <h3>
+          3.
+          <a href="javascript-programs.html" class="link-main">Small and Funny Useful Programs:</a>
+        </h3>
+        <p>
+          Enjoy a variety of simple yet entertaining programs designed to be both fun and
+          educational. These small applications demonstrate practical coding techniques and provide
+          a playful way to learn new skills.
+        </p>
+
+        <h2>Let's Work Together</h2>
+        <p>
+          <strong>
+            I'm always eager to work on exciting and challenging projects. If you're interested in
+            collaborating or have any questions, feel free to reach out. Head over to the
+            <a href="contact.html" class="link-main">contact page</a> to connect, and let's turn
+            your vision into reality. I look forward to the opportunity to work together!
+          </strong>
+        </p>
+        <p>
+          Thank you for visiting my portfolio website. I hope you find this site both informative
+          and inspiring, and I look forward to the possibility of working with you.
+        </p>
+        <button class="scroll-to-top" onclick="scrollToTop()">
+          <img
+            src="assets/icons/scroll-to-top.webp"
+            width="50"
+            height="50"
+            alt="Scroll to Top Icon"
+          />
+        </button>
+      </section>
     </main>
-        
+
     <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="index.html" class="footer-link">Home</a></li>
-                <li><a href="services.html" class="footer-link">Services</a></li>
-                <li><a href="services/website-design-and-development.html" class="footer-link">Services Info</a></li>
-                <li><a href="projects.html" class="footer-link">Projects</a></li>
-            </ul>
-            <ul>
-                <li><a href="blog/index.html" class="footer-link">Blog</a></li>
-                <li><a href="javascript-programs.html" class="footer-link">JS Programs</a></li>
-                <li><a href="blog/definitions.html" class="footer-link">Definitions</a></li>
-                <li><a href="about.html" class="footer-link">About</a></li>
-                <li><a href="contact.html" class="footer-link">Contact</a></li>
-            </ul>   
-            <img src="assets/icons/main-logo.png" height="120" width="120">             
-        </div>
+      <div class="footer-content">
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li>
+            <a href="services/website-design-and-development.html" class="footer-link"
+              >Services Info</a
+            >
+          </li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+          <li><a href="javascript-programs.html" class="footer-link">JS Programs</a></li>
+          <li><a href="blog/definitions.html" class="footer-link">Definitions</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+        </ul>
+
         <div>
-            <p>filip1986babic@gmail.com</p>
-            <div >
-                <a href="https://github.com/FilipBabic/" target="_blank"><img src="assets/icons/github-icon.webp" height="40" width="40" alt="GitHub Icon" title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"><img src="assets/icons/linedin-icon.webp" height="40" width="40" alt="LinkedIn Icon" title="LinkedIn"></a>
-            </div>
-        &copy; 2024 Filip Babić. All rights reserved.
+          <p>filip1986babic@gmail.com</p>
+          <a href="https://github.com/FilipBabic/" target="_blank"
+            ><img
+              src="assets/icons/github-icon.webp"
+              height="40"
+              width="40"
+              alt="GitHub Icon"
+              title="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"
+            ><img
+              src="assets/icons/linedin-icon.webp"
+              height="40"
+              width="40"
+              alt="LinkedIn Icon"
+              title="LinkedIn"
+          /></a>
+          <br />
+          <a href="contact.html" class="footer-link">Contact page</a>
+        </div>
+      </div>
+      &copy; 2024 Filip Babić. All rights reserved.
     </footer>
-    
-    <script src="js/scripts.js"></script>
-</body>
+
+    <script src="js/scripts.js" defer></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log("Service Worker registered with scope:", registration.scope);
+            })
+            .catch((error) => {
+              console.log("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+  </body>
 </html>

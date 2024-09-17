@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API Integration and Development | Filip Babic</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-toggle" aria-label="toggle navigation">
-                <a href="../services.html" ><img src="../assets/icons/arrow-left-solid.svg" alt="Menu Icon for Navigation" width="30" height="30"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="../services.html">Services</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../javascript-programs.html">JS Programs</a></li>
-                <li><a href="../blog/index.html">Blog</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>               
-            </ul>
-        </nav>
+      <nav>
+        <div class="nav-toggle" aria-label="toggle navigation">
+          <a href="../services.html"
+            ><img
+              src="../assets/icons/arrow-left-solid.svg"
+              alt="Menu Icon for Navigation"
+              width="30"
+              height="30"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="active" href="../services.html">Services</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../javascript-programs.html">JS Programs</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <nav class="services-nav">
-            <a class="services-item" href="website-design-and-development.html">Website Design and Development</a>
-            <a class="services-item" href="responsive-design.html">Responsive Design</a>
-            <a class="services-item" href="seo-optimization.html">SEO</a>
-            <a class="services-item" href="database-design-and-managment.html">Database Design and Management</a>
-            <a class="services-item active" href="api-integration-and-development.html">API Integration and Development</a>
-            <a class="services-item" href="performance-optimization.html">Performance Optimization</a>
-            <a class="services-item" href="ui-ux-design.html">UI/UX Design</a>
-            <a class="services-item" href="ecommerce-development.html">E-commerce Development</a>
-            <a class="services-item" href="single-page-applications.html">Single Page Applications</a>
-        </nav>
-        <section id="projects">
-            <h2>API Integration and Development</h2>
-            <p style="font-size: 22px;color:#fe8d45">Definition &#8659;&#8659;&#8659;</p>
-            <p>API integration involves connecting third-party services or data sources with a website or application to enhance functionality or retrieve information. API development involves creating custom APIs to expose specific functionalities of the application.</p>
-            <br>
-            <p style="font-size: 22px;color:#5aa17f">Understanding &#8659;&#8659;&#8659;</p>
-            <p>API integration and development involve connecting different software systems or services to enhance functionality and exchange data seamlessly. Integrating APIs allows applications to leverage external functionalities such as payment processing, social media login, or data synchronization. API development, on the other hand, entails creating custom APIs to expose specific functionalities of an application for integration with other systems. This facilitates interoperability between different platforms, enhances user experience, and enables developers to leverage existing services to build robust and feature-rich applications.</p>
-            <br>
-            <p style="font-size: 22px;color:#e4c482">Examples &#8659;&#8659;&#8659;</p>
-            <p>Integrating a payment gateway API (e.g., Stripe or PayPal) into an e-commerce website, incorporating social media APIs (e.g., Facebook or Twitter) for login and sharing functionalities, or developing a RESTful API for a mobile application to interact with a database.</p>
-        </section>
-        <button class="scroll-to-top" onclick="scrollToTop()"><img src="../assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon"></button>
+      <nav class="services-nav">
+        <a class="services-item" href="website-design-and-development.html"
+          >Website Design and Development</a
+        >
+        <a class="services-item" href="responsive-design.html">Responsive Design</a>
+        <a class="services-item" href="seo-optimization.html">SEO</a>
+        <a class="services-item" href="database-design-and-managment.html"
+          >Database Design and Management</a
+        >
+        <a class="services-item active" href="api-integration-and-development.html"
+          >API Integration and Development</a
+        >
+        <a class="services-item" href="performance-optimization.html">Performance Optimization</a>
+        <a class="services-item" href="ui-ux-design.html">UI/UX Design</a>
+        <a class="services-item" href="ecommerce-development.html">E-commerce Development</a>
+        <a class="services-item" href="single-page-applications.html">Single Page Applications</a>
+      </nav>
+      <section class="services-details">
+        <h2>API Integration and Development</h2>
+        <p style="color: #f27474">Definition &#8659;&#8659;&#8659;</p>
+        <p>
+          API integration involves connecting third-party services or data sources with a website or
+          application to enhance functionality or retrieve information. API development involves
+          creating custom APIs to expose specific functionalities of the application.
+        </p>
+        <br />
+        <p style="color: #5aa17f">Understanding &#8659;&#8659;&#8659;</p>
+        <p>
+          API integration and development involve connecting different software systems or services
+          to enhance functionality and exchange data seamlessly. Integrating APIs allows
+          applications to leverage external functionalities such as payment processing, social media
+          login, or data synchronization. API development, on the other hand, entails creating
+          custom APIs to expose specific functionalities of an application for integration with
+          other systems. This facilitates interoperability between different platforms, enhances
+          user experience, and enables developers to leverage existing services to build robust and
+          feature-rich applications.
+        </p>
+        <br />
+        <p style="color: #e4c482">Examples &#8659;&#8659;&#8659;</p>
+        <p>
+          Integrating a payment gateway API (e.g., Stripe or PayPal) into an e-commerce website,
+          incorporating social media APIs (e.g., Facebook or Twitter) for login and sharing
+          functionalities, or developing a RESTful API for a mobile application to interact with a
+          database.
+        </p>
+      </section>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        <img src="../assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon" />
+      </button>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="../index.html" class="footer-link">Home</a></li>
-                <li><a href="../services.html" class="footer-link">Services</a></li>
-                <li><a href="../services/website-design-and-development.html" class="footer-link">Services Info</a></li>
-                <li><a href="../projects.html" class="footer-link">Projects</a></li>
-            </ul>
-            <ul>
-                <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
-                <li><a href="../javascript-programs.html" class="footer-link">JS Programs</a></li>
-                <li><a href="../blog/definitions.html" class="footer-link">Definitions</a></li>
-                <li><a href="../about.html" class="footer-link">About</a></li>
-                <li><a href="../contact.html" class="footer-link">Contact</a></li>
-            </ul>   
-            <img src="../assets/icons/main-logo.png" height="120" width="120">             
-        </div>
+      <div class="footer-content">
+        <ul>
+          <li><a href="../index.html" class="footer-link">Home</a></li>
+          <li><a href="../services.html" class="footer-link">Services</a></li>
+          <li>
+            <a href="../services/website-design-and-development.html" class="footer-link"
+              >Services Info</a
+            >
+          </li>
+          <li><a href="../projects.html" class="footer-link">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
+          <li><a href="../javascript-programs.html" class="footer-link">JS Programs</a></li>
+          <li><a href="../blog/definitions.html" class="footer-link">Definitions</a></li>
+          <li><a href="../about.html" class="footer-link">About</a></li>
+        </ul>
+
         <div>
-            <p>filip1986babic@gmail.com</p>
-            <div >
-                <a href="https://github.com/FilipBabic/" target="_blank"><img src="../assets/icons/github-icon.webp" height="40" width="40" alt="GitHub Icon" title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"><img src="../assets/icons/linedin-icon.webp" height="40" width="40" alt="LinkedIn Icon" title="LinkedIn"></a>
-            </div>
-        &copy; 2024 Filip Babić. All rights reserved.
+          <p>filip1986babic@gmail.com</p>
+          <a href="https://github.com/FilipBabic/" target="_blank"
+            ><img
+              src="../assets/icons/github-icon.webp"
+              height="40"
+              width="40"
+              alt="GitHub Icon"
+              title="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"
+            ><img
+              src="../assets/icons/linedin-icon.webp"
+              height="40"
+              width="40"
+              alt="LinkedIn Icon"
+              title="LinkedIn"
+          /></a>
+          <br />
+          <a href="../contact.html" class="footer-link">Contact page</a>
+        </div>
+      </div>
+      &copy; 2024 Filip Babić. All rights reserved.
     </footer>
 
     <script src="../js/scripts.js"></script>
-</body>
+  </body>
 </html>

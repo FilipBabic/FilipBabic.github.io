@@ -1,163 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Internet Works? | Filip Babic </title>
-    <meta name="description" content="Explore web design and development projects, showcasing skills in creating engaging, user-friendly websites. Learn about best practices in web design, development, and continuous improvement.">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Internet Works? | Filip Babic</title>
+    <meta
+      name="description"
+      content="Explore web design and development projects, showcasing skills in creating engaging, user-friendly websites. Learn about best practices in web design, development, and continuous improvement."
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-toggle" aria-label="toggle navigation">
-                <img src="../assets/icons/menu.png" alt="Menu Icon for Navigation" width="30" height="30">
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../services.html">Services</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../javascript-programs.html">JS Programs</a></li>
-                <li><a href="../blog/index.html">Blog</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>               
-            </ul>
-        </nav>
+      <nav>
+        <div class="nav-toggle" aria-label="toggle navigation">
+          <img
+            src="../assets/icons/menu.png"
+            alt="Menu Icon for Navigation"
+            width="30"
+            height="30"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../javascript-programs.html">JS Programs</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <article>
-            <h1>How the Internet Works: A Deep Dive into the World Wide Web</h1>
-            <div class="blog-page-author">
-                <p>Filip Babic</p>
-                <p>Published: 20/6/2024</p>
-            </div>
-            <p>In the modern era, the internet is an indispensable part of our daily lives. From checking emails and social media to shopping online and streaming videos, we rely on the internet for countless activities. But have you ever wondered how the internet actually works? How do messages travel across the globe in mere milliseconds? In this article, we will explore the intricate workings of the internet, breaking down complex concepts into digestible insights.</p>
-            
-            <h3>The Backbone of the Internet: Infrastructure</h3>
-            <p>The internet is a vast network of interconnected computers and devices. It is built on a robust infrastructure that includes:</p>
-            <h4>Clients and Servers</h4>
-            <ul>
-                <li><strong>Clients:</strong> These are the devices we use to access the internet, such as smartphones, laptops, and tablets. Clients send requests for information and services.</li>
-                <li><strong>Servers:</strong> These powerful computers store websites, applications, and data. They respond to client requests by delivering the requested information.</li>
-            </ul>
-            <h4>Routers and Switches</h4>
-            <ul>
-                <li><strong>Routers:</strong> These devices direct data packets between different networks, ensuring they reach their destination efficiently.</li>
-                <li><strong>Switches:</strong> These devices connect multiple devices within the same network, enabling them to communicate with each other.</li>
-            </ul>
-            <img src="../assets/images/internet-flow.webp" alt="Diagram displaying asimplified internet workflow" class="responsive-img"/>
-            
-            <h3>Data Transmission: The Journey of Information</h3>
-            <p>When you request a webpage, your request embarks on a complex journey:</p>
-            <h4>Packet Switching</h4>
-            <ul>
-                <li>Data is broken down into smaller chunks called packets. Each packet contains a portion of the data, the sender's and receiver's IP addresses, and sequencing information.</li>
-                <li>Packets travel independently across the network and are reassembled at their destination.</li>
-            </ul>
-            <h4>IP Addresses</h4>
-            <ul>
-                <li>Every device connected to the internet has a unique IP (Internet Protocol) address. This address ensures that data packets are sent to the correct destination.</li>
-                <li>IPv4: The most commonly used format, consisting of four sets of numbers separated by dots (e.g., 192.168.1.1).</li>
-                <li>IPv6: A newer format designed to overcome the limitations of IPv4, with a longer address format</li>
-            </ul>
-            
-            <h4>Protocols</h4>
-            <ul>
-                <li>TCP/IP (Transmission Control Protocol/Internet Protocol): The foundational protocols for internet communication. TCP ensures data integrity by managing the assembly of packets, while IP handles addressing and routing.</li>
-            </ul>
-            <h3>Domain Name System (DNS): The Internet’s Address Book</h3>
-            <h4>Domain Names and IP Addresses</h4>
-            <ul>
-                <li>Humans use domain names like <a href="https://www.example.com" target="_blank" class="blog-link-content">www.example.com</a> to access websites. Computers, however, use IP addresses.</li>
-                <li>The DNS translates human-friendly domain names into IP addresses that computers can understand.</li>
-            </ul>
-            <h4>DNS Servers</h4>
-            <ul>
-                <li>When you enter a domain name, your device queries a DNS server to find the corresponding IP address. This process ensures you are connected to the right website.</li>
-            </ul>
-            <img src="../assets/images/internet.webp" alt="Diagram displaying asimplified internet workflow" class="responsive-img"/>
-            <h3>Connecting to the Internet: ISPs and More</h3>
-            <h4>Internet Service Providers (ISPs)</h4>
-            <ul>
-                <li>ISPs provide the infrastructure that allows individuals and businesses to connect to the internet. They manage a network of routers, switches, and data centers.</li>
-                <li>Types of Connections: ISPs offer various types of internet connections, including DSL, cable, fiber-optic, satellite, and wireless.</li>
-            </ul>
-            <h4>Modems and Routers</h4>
-            <ul>
-                <li><strong>Modem:</strong> Converts the analog signal from your ISP into a digital signal that your devices can use.</li>
-                <li><strong>Router:</strong> Distributes the internet connection from the modem to multiple devices within your network, either via Ethernet cables or Wi-Fi.</li>
-            </ul>
-
-            <h3>Web Browsing: How Browsers Work</h3>
-            <h4>HTTP/HTTPS</h4>
-            <ul>
-                <li><strong>HTTP (Hypertext Transfer Protocol):</strong> The protocol used for transferring web pages. It defines how messages are formatted and transmitted.</li>
-                <li><strong>HTTPS (HTTP Secure):</strong> An extension of HTTP that uses SSL/TLS encryption to secure data transfer, ensuring privacy and data integrity.</li>
-            </ul>
-            <h4>Web Browsers</h4>
-            <ul>
-                <li><strong>Browsers</strong> are software applications that interpret HTML, CSS, and JavaScript to display web pages. They manage HTTP requests to retrieve web pages from servers and render them for users.</li>
-                <li>Examples: Google Chrome, Mozilla Firefox, Safari, Microsoft Edge.</li>
-            </ul>
-
-            <h3>Security: Keeping Data Safe</h3>
-            <h4>Encryption</h4>
-            <ul>
-                <li><strong>SSL/TLS:</strong> Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols encrypt data transferred between clients and servers, protecting it from eavesdropping and tampering.</li>
-            </ul>
-            <h4>Firewalls and Antivirus Software</h4>
-            <ul>
-                <li><strong>Firewalls:</strong> Network security systems that monitor and control incoming and outgoing traffic based on predetermined security rules.</li>
-                <li><strong>Antivirus Software:</strong> Programs designed to detect, prevent, and remove malware and other malicious software from devices.</li>
-            </ul>
-
-            <h3>The Role of Content Delivery Networks (CDNs)</h3>
-            <h4>Speed and Efficiency</h4>
-            <ul>
-                <li><strong>CDNs</strong> store copies of web content in multiple locations around the world. When a user requests a webpage, the CDN delivers content from the nearest server, reducing load times and improving performance.</li>
-            </ul>
-            <h4>Scalability</h4>
-            <ul>
-                <li>CDNs help websites handle large volumes of traffic by distributing the load across multiple servers.</li>
-            </ul>
-            <h3>The Future of the Internet</h3>
-            <p>The internet is continuously evolving, with advancements like 5G technology, the Internet of Things (IoT), and artificial intelligence (AI) shaping its future. These innovations promise faster speeds, more connected devices, and smarter applications, further integrating the internet into our daily lives.</p>
-            <h3>Conclusion</h3>
-            <p>Understanding how the internet works gives us a greater appreciation of the technology that connects us to the world. From the infrastructure and protocols that enable data transmission to the security measures that protect our information, the internet is a marvel of modern engineering. As we continue to rely on and innovate within this digital realm, staying informed about its workings will help us navigate its ever-expanding landscape more effectively.</p>
-        </article>
-        <button class="scroll-to-top" onclick="scrollToTop()"><img src="../assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon"></button>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="../index.html" class="footer-link">Home</a></li>
-                <li><a href="../services.html" class="footer-link">Services</a></li>
-                <li><a href="../services/website-design-and-development.html" class="footer-link">Services Info</a></li>
-                <li><a href="../projects.html" class="footer-link">Projects</a></li>
-            </ul>
-            <ul>
-                <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
-                <li><a href="../javascript-programs.html" class="footer-link">JS Programs</a></li>
-                <li><a href="../blog/definitions.html" class="footer-link">Definitions</a></li>
-                <li><a href="../about.html" class="footer-link">About</a></li>
-                <li><a href="../contact.html" class="footer-link">Contact</a></li>
-            </ul>   
-            <img src="../assets/icons/main-logo.png" height="120" width="120">             
+      <article>
+        <h1>How the Internet Works: A Deep Dive into the World Wide Web</h1>
+        <div class="blog-page-author">
+          <p>Filip Babic</p>
+          <p>Published: 20/6/2024</p>
         </div>
+        <p>
+          In the modern era, the internet is an indispensable part of our daily lives. From checking
+          emails and social media to shopping online and streaming videos, we rely on the internet
+          for countless activities. But have you ever wondered how the internet actually works? How
+          do messages travel across the globe in mere milliseconds? In this article, we will explore
+          the intricate workings of the internet, breaking down complex concepts into digestible
+          insights.
+        </p>
+
+        <h3>The Backbone of the Internet: Infrastructure</h3>
+        <p>
+          The internet is a vast network of interconnected computers and devices. It is built on a
+          robust infrastructure that includes:
+        </p>
+        <h4>Clients and Servers</h4>
+        <ul>
+          <li>
+            <strong>Clients:</strong> These are the devices we use to access the internet, such as
+            smartphones, laptops, and tablets. Clients send requests for information and services.
+          </li>
+          <li>
+            <strong>Servers:</strong> These powerful computers store websites, applications, and
+            data. They respond to client requests by delivering the requested information.
+          </li>
+        </ul>
+        <h4>Routers and Switches</h4>
+        <ul>
+          <li>
+            <strong>Routers:</strong> These devices direct data packets between different networks,
+            ensuring they reach their destination efficiently.
+          </li>
+          <li>
+            <strong>Switches:</strong> These devices connect multiple devices within the same
+            network, enabling them to communicate with each other.
+          </li>
+        </ul>
+        <img
+          src="../assets/images/internet-flow-v1.webp"
+          alt="Diagram displaying asimplified internet workflow"
+          class="responsive-img"
+        />
+
+        <h3>Data Transmission: The Journey of Information</h3>
+        <p>When you request a webpage, your request embarks on a complex journey:</p>
+        <h4>Packet Switching</h4>
+        <ul>
+          <li>
+            Data is broken down into smaller chunks called packets. Each packet contains a portion
+            of the data, the sender's and receiver's IP addresses, and sequencing information.
+          </li>
+          <li>
+            Packets travel independently across the network and are reassembled at their
+            destination.
+          </li>
+        </ul>
+        <h4>IP Addresses</h4>
+        <ul>
+          <li>
+            Every device connected to the internet has a unique IP (Internet Protocol) address. This
+            address ensures that data packets are sent to the correct destination.
+          </li>
+          <li>
+            IPv4: The most commonly used format, consisting of four sets of numbers separated by
+            dots (e.g., 192.168.1.1).
+          </li>
+          <li>
+            IPv6: A newer format designed to overcome the limitations of IPv4, with a longer address
+            format
+          </li>
+        </ul>
+
+        <h4>Protocols</h4>
+        <ul>
+          <li>
+            TCP/IP (Transmission Control Protocol/Internet Protocol): The foundational protocols for
+            internet communication. TCP ensures data integrity by managing the assembly of packets,
+            while IP handles addressing and routing.
+          </li>
+        </ul>
+        <h3>Domain Name System (DNS): The Internet’s Address Book</h3>
+        <h4>Domain Names and IP Addresses</h4>
+        <ul>
+          <li>
+            Humans use domain names like
+            <a href="https://www.example.com" target="_blank" class="blog-link-content"
+              >www.example.com</a
+            >
+            to access websites. Computers, however, use IP addresses.
+          </li>
+          <li>
+            The DNS translates human-friendly domain names into IP addresses that computers can
+            understand.
+          </li>
+        </ul>
+        <h4>DNS Servers</h4>
+        <ul>
+          <li>
+            When you enter a domain name, your device queries a DNS server to find the corresponding
+            IP address. This process ensures you are connected to the right website.
+          </li>
+        </ul>
+        <img
+          src="../assets/images/internet-v1.webp"
+          alt="Diagram displaying asimplified internet workflow"
+          class="responsive-img"
+        />
+        <h3>Connecting to the Internet: ISPs and More</h3>
+        <h4>Internet Service Providers (ISPs)</h4>
+        <ul>
+          <li>
+            ISPs provide the infrastructure that allows individuals and businesses to connect to the
+            internet. They manage a network of routers, switches, and data centers.
+          </li>
+          <li>
+            Types of Connections: ISPs offer various types of internet connections, including DSL,
+            cable, fiber-optic, satellite, and wireless.
+          </li>
+        </ul>
+        <h4>Modems and Routers</h4>
+        <ul>
+          <li>
+            <strong>Modem:</strong> Converts the analog signal from your ISP into a digital signal
+            that your devices can use.
+          </li>
+          <li>
+            <strong>Router:</strong> Distributes the internet connection from the modem to multiple
+            devices within your network, either via Ethernet cables or Wi-Fi.
+          </li>
+        </ul>
+
+        <h3>Web Browsing: How Browsers Work</h3>
+        <h4>HTTP/HTTPS</h4>
+        <ul>
+          <li>
+            <strong>HTTP (Hypertext Transfer Protocol):</strong> The protocol used for transferring
+            web pages. It defines how messages are formatted and transmitted.
+          </li>
+          <li>
+            <strong>HTTPS (HTTP Secure):</strong> An extension of HTTP that uses SSL/TLS encryption
+            to secure data transfer, ensuring privacy and data integrity.
+          </li>
+        </ul>
+        <h4>Web Browsers</h4>
+        <ul>
+          <li>
+            <strong>Browsers</strong> are software applications that interpret HTML, CSS, and
+            JavaScript to display web pages. They manage HTTP requests to retrieve web pages from
+            servers and render them for users.
+          </li>
+          <li>Examples: Google Chrome, Mozilla Firefox, Safari, Microsoft Edge.</li>
+        </ul>
+
+        <h3>Security: Keeping Data Safe</h3>
+        <h4>Encryption</h4>
+        <ul>
+          <li>
+            <strong>SSL/TLS:</strong> Secure Sockets Layer (SSL) and Transport Layer Security (TLS)
+            protocols encrypt data transferred between clients and servers, protecting it from
+            eavesdropping and tampering.
+          </li>
+        </ul>
+        <h4>Firewalls and Antivirus Software</h4>
+        <ul>
+          <li>
+            <strong>Firewalls:</strong> Network security systems that monitor and control incoming
+            and outgoing traffic based on predetermined security rules.
+          </li>
+          <li>
+            <strong>Antivirus Software:</strong> Programs designed to detect, prevent, and remove
+            malware and other malicious software from devices.
+          </li>
+        </ul>
+
+        <h3>The Role of Content Delivery Networks (CDNs)</h3>
+        <h4>Speed and Efficiency</h4>
+        <ul>
+          <li>
+            <strong>CDNs</strong> store copies of web content in multiple locations around the
+            world. When a user requests a webpage, the CDN delivers content from the nearest server,
+            reducing load times and improving performance.
+          </li>
+        </ul>
+        <h4>Scalability</h4>
+        <ul>
+          <li>
+            CDNs help websites handle large volumes of traffic by distributing the load across
+            multiple servers.
+          </li>
+        </ul>
+        <h3>The Future of the Internet</h3>
+        <p>
+          The internet is continuously evolving, with advancements like 5G technology, the Internet
+          of Things (IoT), and artificial intelligence (AI) shaping its future. These innovations
+          promise faster speeds, more connected devices, and smarter applications, further
+          integrating the internet into our daily lives.
+        </p>
+        <h3>Conclusion</h3>
+        <p>
+          Understanding how the internet works gives us a greater appreciation of the technology
+          that connects us to the world. From the infrastructure and protocols that enable data
+          transmission to the security measures that protect our information, the internet is a
+          marvel of modern engineering. As we continue to rely on and innovate within this digital
+          realm, staying informed about its workings will help us navigate its ever-expanding
+          landscape more effectively.
+        </p>
+      </article>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        <img src="../assets/icons/scroll-to-top.webp" alt="Scroll to Top Icon" />
+      </button>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <ul>
+          <li><a href="../index.html" class="footer-link">Home</a></li>
+          <li><a href="../services.html" class="footer-link">Services</a></li>
+          <li>
+            <a href="../services/website-design-and-development.html" class="footer-link"
+              >Services Info</a
+            >
+          </li>
+          <li><a href="../projects.html" class="footer-link">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
+          <li><a href="../javascript-programs.html" class="footer-link">JS Programs</a></li>
+          <li><a href="../blog/definitions.html" class="footer-link">Definitions</a></li>
+          <li><a href="../about.html" class="footer-link">About</a></li>
+        </ul>
+
         <div>
-            <p>filip1986babic@gmail.com</p>
-            <div >
-                <a href="https://github.com/FilipBabic/" target="_blank"><img src="../assets/icons/github-icon.webp" height="40" width="40" alt="GitHub Icon" title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"><img src="../assets/icons/linedin-icon.webp" height="40" width="40" alt="LinkedIn Icon" title="LinkedIn"></a>
-            </div>
-        &copy; 2024 Filip Babić. All rights reserved.
+          <p>filip1986babic@gmail.com</p>
+          <a href="https://github.com/FilipBabic/" target="_blank"
+            ><img
+              src="../assets/icons/github-icon.webp"
+              height="40"
+              width="40"
+              alt="GitHub Icon"
+              title="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/filipbabic/" target="_blank"
+            ><img
+              src="../assets/icons/linedin-icon.webp"
+              height="40"
+              width="40"
+              alt="LinkedIn Icon"
+              title="LinkedIn"
+          /></a>
+          <br />
+          <a href="../contact.html" class="footer-link">Contact page</a>
+        </div>
+      </div>
+      &copy; 2024 Filip Babić. All rights reserved.
     </footer>
 
     <script src="../js/scripts.js"></script>
-</body>
+  </body>
 </html>
