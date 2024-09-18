@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("simulateTournament");
+  const simulationButton = document.getElementById("simulateTournament");
   const tournamentDisplay = document.getElementById("tournament-simulation");
-  tournamentDisplay.innerHTML = "";
-  button.addEventListener("click", () => {
+  const startSimulation = document.getElementById("start-simulation");
+  simulationButton.addEventListener("click", () => {
+    tournamentDisplay.innerHTML = "";
     const prijateljskeUtakmice = {
       GER: [
         {
@@ -1137,13 +1138,19 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         medalje.push(rezultatZaTreće[1]);
       }
-
       tournamentDisplay.innerHTML += `<br><h1 style="text-decoration:underline">Medals</h1>`;
-      tournamentDisplay.innerHTML += `<p>1. \u{1F947} ${medalje[0].flag}${medalje[0].Team} \u{1F3C6}</p>`;
-      tournamentDisplay.innerHTML += `<p>2. \u{1F948} ${medalje[1].flag}${medalje[1].Team}</p>`;
-      tournamentDisplay.innerHTML += `<p>3. \u{1F949} ${medalje[2].flag}${medalje[2].Team}</p>`;
+      let medalsContent = `<div style="margin:0 auto;max-width: 900px"><p>1. \u{1F947} ${medalje[0].flag}${medalje[0].Team} \u{1F3C6}</p>
+      <p>2. \u{1F948} ${medalje[1].flag}${medalje[1].Team}</p><p>3. \u{1F949} ${medalje[2].flag}${medalje[2].Team}</p></div><br><br>
+      `;
+      tournamentDisplay.innerHTML += medalsContent;
+
+      tournamentDisplay.innerHTML += `<h5 style="text-align:center;color:green">simulation successfull</h5>`;
     };
 
     eliminacionaFaza(timoviEliminacioneFaze, utakmiceČetvrtfinala);
+    // change button title
+    simulationButton.textContent = "Play Again";
+    // scroll to start of simulation
+    startSimulation.scrollIntoView({ behavior: "smooth" });
   });
 });

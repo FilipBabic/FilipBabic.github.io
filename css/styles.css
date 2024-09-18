@@ -632,12 +632,10 @@ article ol li {
   width: 100%;
   overflow-x: auto; /* Enable horizontal scrolling */
 }
-
 table {
   width: 100%; /* Ensure table takes full width */
   border-collapse: collapse; /* Collapse table borders */
 }
-
 th,
 td {
   padding: 8px;
@@ -647,7 +645,6 @@ td {
 td:hover {
   color: red;
 }
-
 .pots-container {
   display: flex;
   flex-direction: row;
