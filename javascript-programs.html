@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    />
   </head>
   <body>
     <header>
@@ -31,12 +35,65 @@
     </header>
 
     <main>
-      <section>
+        <div class="js-programs-container">
         <div class="blog-heading">
           <h1>JAVA SCRIPT</h1>
           <h4>programs</h4>
         </div>
         <br />
+        <div class="js-programs-card">
+          <h1>Olympic games basketball tournament 2024</h1>
+          <p>Experience the excitement of an Olympic basketball tournament with this interactive JavaScript simulation. With just a single click, you can simulate the entire tournament from start to finish, including the group stage, knockout rounds, and final medal awards.</p><br>
+          <p>The outcomes of each game are calculated based on a combination of the team’s rank, current form, and a random factor, making the results both strategic and unpredictable. Teams start with a performance rating derived from previous games, and their form increases or decreases depending on whether they win or lose each match.</p><br>
+          <p>At the end of the competition, the top three teams are awarded gold, silver, and bronze medals based on their final standings.</p>
+          <br>
+          <h3>Participants:</h3>
+          <div class="participants">    
+            <div><span class="flag-icon flag-icon-de"></span> Germany&nbsp;&nbsp;</div>     
+            <div><span class="flag-icon flag-icon-fr"></span> France&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-jp"></span> Japan&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-us"></span> United States&nbsp;</div>
+            <div><span class="flag-icon flag-icon-ca"></span> Canada&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-au"></span> Australia&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-rs"></span> Serbia&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-pr"></span> Puerto Rico&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-gr"></span> Greece&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-br"></span> Brazil&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-ss"></span> South Sudan&nbsp;&nbsp;</div>
+            <div><span class="flag-icon flag-icon-es"></span> Spain&nbsp;&nbsp;</div>                 
+          </div>
+          <h3>Groups:</h3>
+          <div class="tournament-groups">
+            <div class="group">
+              <h4>Group A</h4>
+              <div><span class="flag-icon flag-icon-ca"></span> Canada&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-au"></span> Australia&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-gr"></span> Greece&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-es"></span> Spain&nbsp;&nbsp;</div>
+            </div>
+            <div class="group">
+              <h4>Group B</h4>
+              <div><span class="flag-icon flag-icon-de"></span> Germany&nbsp;&nbsp;</div>     
+              <div><span class="flag-icon flag-icon-fr"></span> France&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-br"></span> Brazil&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-jp"></span> Japan&nbsp;&nbsp;</div>
+            </div>
+            <div class="group">
+              <h4>Group C</h4>
+              <div><span class="flag-icon flag-icon-us"></span> United States&nbsp;</div>
+              <div><span class="flag-icon flag-icon-rs"></span> Serbia&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-ss"></span> South Sudan&nbsp;&nbsp;</div>
+              <div><span class="flag-icon flag-icon-pr"></span> Puerto Rico&nbsp;&nbsp;</div>
+            </div>
+          </div>
+          <div id="tournament-simulation"></div>
+          <div style="text-align: center;">
+          <button class="beautiful-button" id="simulateTournament">Simulate Olympic Games</button>
+        </div>
+        </div>
+          
+          
+        
         <div class="js-programs-card">
           <h1>Current Time</h1>
           <p>This is your browser current time</p>
@@ -46,8 +103,7 @@
           <h1>Time Since Birth, Age Calculator</h1>
           <p>
             Here you can calculate years, months, days, minutes and seconds since your birth. Enter
-            the correct date and time of birth and click the button. Below is a code example of this
-            program:
+            the correct date and time of birth and click the button.
           </p>
           <br />
           <form id="age-form">
@@ -66,7 +122,8 @@
         <button class="scroll-to-top" onclick="scrollToTop()">
           <img src="assets/icons/scroll-to-top.webp" />
         </button>
-      </section>
+      </div>
+    </div>
     </main>
 
     <footer>
@@ -114,6 +171,7 @@
     </footer>
 
     <script src="js/scripts.js" defer></script>
+    <script src="js/basketball-tournament.js" defer></script>
     <script src="js/clock.js" defer></script>
     <script src="js/age-calculator.js" defer></script>
   </body>

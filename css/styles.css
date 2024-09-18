@@ -213,6 +213,8 @@ footer p {
 .blog-main .left h1 {
   background-color: white;
   color: #00345a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding: 0 2rem;
   font-size: 1.75rem;
 }
@@ -223,6 +225,8 @@ footer p {
 }
 .blog-img-container {
   height: 17.8rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   overflow: hidden;
 }
 .blog-main .left img {
@@ -248,6 +252,7 @@ footer p {
 .blog-post-small-card img {
   max-width: 152px;
   height: 90px;
+  border-radius: 5px;
   padding: 0;
 }
 .blog-post-sm-content {
@@ -348,6 +353,7 @@ article ol li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  border-radius: 5px;
   max-width: 780px;
 }
 .project {
@@ -356,6 +362,7 @@ article ol li {
   font-size: 1.05rem;
   text-align: center;
   background-color: white;
+  border-radius: 5px;
   transition: transform 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -533,17 +540,23 @@ article ol li {
 }
 
 /* javascript programs card */
+.js-programs-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .js-programs-card {
   background: #fff;
   margin-bottom: 2rem;
   padding: 2rem;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 .js-programs-card p {
-  text-align: center;
+  text-align: justify;
   font-weight: 500;
   font-size: 1.05rem;
+  padding: 0;
 }
 .js-programs-card form {
   margin-bottom: 20px;
@@ -564,10 +577,16 @@ article ol li {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
 }
 .js-programs-card h3 {
   border-top: 2px solid #00477e;
-  padding-top: 1rem;
+  text-align: left;
+  padding: 1rem 0;
+}
+.js-programs-card h4 {
+  text-align: left;
+  padding: 0.5rem 0;
 }
 .js-programs-card ol li {
   text-align: left;
@@ -590,6 +609,54 @@ article ol li {
   text-align: center;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+/* basketball tournament stylings */
+.participants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.tournament-groups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-bottom: 1rem;
+}
+.group {
+  text-align: left;
+  width: 20%;
+}
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+  width: 100%; /* Ensure table takes full width */
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+td:hover {
+  color: red;
+}
+
+.pots-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+.pots-row {
+  width: 25%;
 }
 /* clock style */
 .clock {
@@ -662,6 +729,8 @@ article ol li {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   width: 60%;
   padding: 3rem;
 }
@@ -710,6 +779,8 @@ article ol li {
 .contact-form-details {
   background-color: #00345a;
   color: #f5f5f5;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding: 3rem;
   width: 40%;
 }
@@ -912,6 +983,24 @@ article ol li {
   pre {
     font-size: 0.7rem;
     font-weight: normal;
+  }
+  .table-container {
+    overflow-x: scroll; /* Enable scroll on smaller screens */
+    -webkit-overflow-scrolling: touch; /* Adds smooth scrolling on mobile */
+  }
+  table {
+    width: 100%; /* Ensure the table still takes full width of the container */
+    min-width: 600px; /* Optional: Set a minimum width for the table to prevent shrinking too much */
+  }
+  .pots-row {
+    width: 50%;
+    padding-bottom: 1rem;
+  }
+  .participants {
+    justify-content: left;
+  }
+  .group {
+    width: 50%;
   }
   #result {
     font-size: 15px;
