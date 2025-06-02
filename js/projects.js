@@ -1,5 +1,19 @@
 const projects = [
   {
+    name: '"Pistać Media Website - in progress"',
+    type: "Multilingual Corporate Site ",
+    period: "May 2025 - present",
+    desc: [
+      "Built with Next.js for server-side rendering and fast navigation",
+      "Developed mobile-first UI using Tailwind CSS for modern, clean design",
+      "Integrated language switching (Serbian, English, German) to reach broader audiences",
+      "Optimized for performance and SEO, ensuring fast load times and visibility",
+      "Deployed via Vercel with Git-based CI/CD workflow",
+    ],
+    link: "https://pistac-media.vercel.app/",
+    skills: ["next js", "react", "tailwind css", "next-intl", "vercel", "git", "framer-motion"],
+  },
+  {
     name: '"Job fusion"',
     type: "full-stack application",
     period: "September 2024 - present",
